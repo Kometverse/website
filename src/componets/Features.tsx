@@ -10,7 +10,7 @@ export const Features = () => {
                 <div className="w-full">
                     <Feature text="Secured Transection" img={bitcoin} order={"0"} />
                     <div className=" m-auto mb-10 py-8 text-center flex flex-col lg:flex-row   lg:justify-around items-center ">
-                        <img className={`lg:mx-5 w-[80%] sm:w-[350px]  mb-5 lg:order-2`} src={goal} alt="" />
+                        <img className={`lg:mx-5 w-[50%] sm:w-[350px]  mb-5 lg:order-2`} src={goal} alt="" />
                         <div className="flex flex-col lg:items-start items-center ">
                             <h1 className="font-bold text-2xl sm:text-3xl lg:w-[23ch] lg:text-left mb-6">Credibilty in in-game tokens and NFTs</h1>
                             <div className="bg-gray-300 h-[30px] sm:h-[40px]  w-[85%] max-w-md ">

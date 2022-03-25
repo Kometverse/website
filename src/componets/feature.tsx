@@ -11,7 +11,7 @@ export const Feature = (props: Props) => {
     return (
         <>
             <div className=" m-auto mb-10 py-8 text-center flex flex-col lg:flex-row  lg:justify-around items-center ">
-                <img className={`sm:w-[350px] w-[70%] mb-5 ${orderclass} mx-5`} src={props.img} alt="" />
+                <img className={`sm:w-[350px] w-[50%] mb-5 ${orderclass} mx-5`} src={props.img} alt="" />
                 <div className="flex flex-col  lg:items-start items-center  p-4">
                     <h1 className="font-bold text-2xl sm:text-3xl lg:w-[23ch] lg:text-left mb-6">{props.text}</h1>
                     <div className="bg-gray-300 h-[30px] sm:h-[40px]  w-full max-w-md ">
