@@ -9,7 +9,7 @@ function App() {
     // top level container 
     <div className="">
       <div className="text-white relative w-full min-h-screen bg-primary backdrop-blur-3xl ">
-        <div className="lg:w-[70%] m-auto ">
+        <div className="xl:w-[80%] m-auto ">
           <Navbar />
           <Hero />
           <Intro />
