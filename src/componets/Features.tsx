@@ -8,7 +8,7 @@ export const Features = () => {
             <div className="lg:w-[80%] border flex-col flex lg:items-center m-auto" >
                 <p className="text-center max-w-[35ch] sm:text-xl bold mb-6  m-auto ">Unlocking your digital world Unlocking your digital world</p>
                 <div className="w-full">
-                    <Feature text="Secured Transection" img={bitcoin} order={0} />
+                    <Feature text="Secured Transection" img={bitcoin} order={"0"} />
                     <div className=" m-auto mb-10 py-8 text-center flex flex-col lg:flex-row lg:justify-center items-center ">
                         <img className={`lg:mx-5 w-[80%] sm:w-[300px]  mb-5 lg:order-1`} src={goal} alt="" />
                         <div className="flex flex-col lg:items-start items-center">
@@ -17,10 +17,9 @@ export const Features = () => {
                             </div>
                         </div>
                     </div>
-                    <Feature text="Seamless access  to future" img={future} order={0} />
+                    <Feature text="Seamless access  to future" img={future} order={"0"} />
                 </div>
             </div>
         </>
     )
-
 }
