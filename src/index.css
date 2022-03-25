@@ -3,7 +3,37 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: initial;
+}
+
 h1 {
   font-family: "Bungee Shade", cursive;
   font-family: "Poppins", sans-serif;
+}
+
+.intro-gradient {
+  background: linear-gradient(
+    98.77deg,
+    rgba(151, 151, 249, 0.59) 4.74%,
+    rgba(78, 78, 205, 0.666034) 38.93%,
+    rgba(85, 85, 255, 0.32) 65.01%
+  );
+}
+
+.top-btn {
+  background: linear-gradient(
+    180deg,
+    #230a5a 0.53%,
+    rgba(35, 10, 90, 0.8) 100%
+  );
+}
+
+.cta-btn {
+  background: linear-gradient(114.37deg, #290b68 35.38%, #ba9afd 106.71%);
+  border-radius: 50px;
 }
