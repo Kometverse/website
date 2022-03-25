@@ -8,13 +8,13 @@ function App() {
   return (
     // top level container 
     <div className="">
-      <div className="text-white relative w-full min-h-screen pb-52 bg-primary backdrop-blur-3xl ">
+      <div className="text-white relative w-full min-h-screen bg-primary backdrop-blur-3xl ">
         <div className="lg:w-[70%] m-auto ">
           <Navbar />
           <Hero />
           <Intro />
           <Features />
-          {/* <CTA /> */}
+          <CTA />
         </div>
       </div >
 
