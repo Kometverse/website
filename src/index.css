@@ -38,3 +38,10 @@ h1 {
   background: linear-gradient(114.37deg, #290b68 35.38%, #ba9afd 106.71%);
   border-radius: 50px;
 }
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}

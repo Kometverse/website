@@ -1,5 +1,6 @@
 import { CTA } from "./componets/bottomCta"
 import { Features } from "./componets/Features"
+import { Footer } from "./componets/footer"
 import { Hero } from "./componets/Hero"
 import { Intro } from "./componets/Intro"
 import { Navbar } from "./componets/Navbar"
@@ -15,6 +16,7 @@ function App() {
           <Intro />
           <Features />
           <CTA />
+          <Footer />
         </div>
       </div >
 
