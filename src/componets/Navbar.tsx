@@ -2,12 +2,13 @@ import burgerMenue from "/b.svg"
 import twitter from "/twitter.svg"
 import discord from "/discord.svg"
 import mail from "/mail.svg"
+import logo from "/log.svg"
 export const Navbar = () => {
     return (
         <>
-            <nav className="flex justify-between items-center px-12 py-3 mb-10 ">
-                <div className="select-none xl:block blur-2xl w-40 h-40  top-12 -left-16 absolute bg-[#8146FF]/50 rounded-full"></div>
-                <h1 className="text-xl sm:text-3xl font-bold ">KOMET</h1>
+            <nav className="flex justify-between items-center px-10 py-3 mb-10 ">
+                <div className="select-none xl:block blur-2xl lg:w-40 w-20 h-20 lg:h-40  top-12 left-3 lg:-left-16 absolute bg-[#8146FF]/50 rounded-full"></div>
+                <img src={logo} className="w-20" alt="" />
                 <div className="hidden sm:flex items-center ">
 
                     <a href="#" className="mx-4 icon"><img src={twitter} alt="" /></a>
@@ -19,7 +20,6 @@ export const Navbar = () => {
                 {/* only show on mobile view  */}
 
 
-                <button data-tilt className=" sm:hidden w-8"><img src={burgerMenue} alt="" /></button>
 
             </nav>
         </>

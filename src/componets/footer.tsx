@@ -1,10 +1,12 @@
 import discord from "/discord.svg"
 import twitter from "/twitter.svg"
+import logo from "/log.svg"
+
 export const Footer = () => {
     return (
         <>
             <div className="w-full py-5 flex items-center justify-around text-sm  lg:text-">
-                <h1>KOMET</h1>
+                <img src={logo} className="w-12" alt="" />
                 <p className="text-[12px]">Made with <i className="text-red-500">❤️</i> from india for global  </p>
                 <div className="flex">
                     <img className="w-4 lg:w-7" src={discord} alt="" />
