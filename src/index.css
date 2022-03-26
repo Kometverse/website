@@ -67,3 +67,12 @@ button:focus {
 .card {
   background: linear-gradient(90deg, #290b68 0%, #8146ff 100%);
 }
+
+.rankjoin {
+  background-image: linear-gradient(
+    rgba(255, 168, 89, 1),
+    rgba(255, 204, 158, 0.74)
+  );
+  background-clip: text;
+  color: transparent;
+}
