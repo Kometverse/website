@@ -7,7 +7,6 @@ export const TiltCards = () => {
   return (
     <>
       <p className="px-5  text-center max-w-[35ch] py-5 text-3xl bold mb-4  sm:text-7xl lg:py-10 font-bold m-auto ">
-        {" "}
         Unlocking your digital world
       </p>
       <div className="lg:w-[90%] relative  flex-col flex lg:items-center lg:flex-row space-between  m-auto my-15 sm:mb-28 lg:mb-32">
@@ -36,7 +35,7 @@ export const TiltCards = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
           </p>
           <img
-            src={bitcoin}
+            src={goal}
             className="w-36 absolute right-3 bottom-3"
             alt=""
           />   
@@ -51,7 +50,7 @@ export const TiltCards = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
           </p>
           <img
-            src={bitcoin}
+            src={future}
             className="w-36 absolute right-3 bottom-3"
             alt=""
           />   
