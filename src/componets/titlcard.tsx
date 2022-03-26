@@ -6,12 +6,10 @@ import Tilt from 'react-parallax-tilt';
 export const TiltCards = () => {
   return (
     <>
-      <p className="px-5  text-center max-w-[35ch] py-5 text-3xl bold mb-4  sm:text-7xl lg:py-10 font-bold m-auto ">
+      <p className="px-5  text-center max-w-[35ch] text-4xl bold mb-4  sm:text-7xl lg:py-10 font-bold m-auto ">
         Unlocking your digital world
       </p>
       <div className="lg:w-[90%] relative  flex-col flex lg:items-center lg:flex-row space-between  m-auto my-15 sm:mb-28 lg:mb-32">
-
-
         <Tilt
           tiltEnable={true}
           className="lg:w-[31%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
