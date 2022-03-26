@@ -47,8 +47,8 @@ export const CTA = ({ setEmail }: Props) => {
 
   return (
     <>
-      <div id='cta' className='w-full cta lg:py-32 py-20  flex flex-col items-center '>
-        <h1 className='text-3xl sm:text-5xl font-bold mb-10 lg:text-7xl '>claim early Access</h1>
+      <div id='cta' className='w-full cta lg:pt-20  lg:pb-32  flex flex-col items-center '>
+        <h1 className='text-3xl sm:text-5xl font-bold mb-10 lg:text-7xl '>Claim Early Access</h1>
         <form className=' w-full m-auto ' onSubmit={handleSubmit}>
           <div className=' rounded-full  lg:w-[30%] m-auto  flex flex-row w-[90%] bg-white '>
             <input
@@ -60,7 +60,7 @@ export const CTA = ({ setEmail }: Props) => {
               placeholder="Enter your email"
               className="text-black grow rounded-full px-[5px] lg:px-4 text-sm outline-none sm:text-xl"
             />
-            <button className={btnStyles + " text-lg sm:text-lg  rounded-full cta-btn text-white   px-8  lg:px-10 py-2 lg:text-3xl"} disabled={isDissabled} type="submit">join</button>
+            <button className={btnStyles + " text-lg sm:text-lg  rounded-full cta-btn text-white   px-8  lg:px-10 py-2 lg:text-xl"} disabled={isDissabled} type="submit">Join</button>
           </div>
         </form>
       </div>

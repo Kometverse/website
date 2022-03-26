@@ -10,10 +10,11 @@ export const Navbar = () => {
                 <h1 className="text-xl sm:text-3xl font-bold ">KOMET</h1>
                 <div className="hidden sm:flex items-center ">
 
-                    <a href="#" className="icon w-6 mx-4"><img src={mail} alt="" /></a>
                     <a href="#" className="mx-4 icon"><img src={twitter} alt="" /></a>
                     <a href="#" className="mx-4 icon"><img src={discord} alt="" /></a>
-                    <a href="#cta" className="mx-6 cta   font-bold py-2 px-4 text-sm rounded-md">join wishlist</a>
+
+                    <a href="#" className="icon w-6 mx-4"><img src={mail} alt="" /></a>
+                    <a href="#cta" className="mx-6 cta   font-bold py-2 px-4 text-sm rounded-md">Join Waitlist</a>
                 </div>
                 {/* only show on mobile view  */}
 
