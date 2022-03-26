@@ -15,48 +15,42 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           className="lg:w-[31%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
-          <div className="">
-            <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
-            <p className="text-xl text-left w-[15ch] px-6 ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
-            </p>
-            <img
-              src={goal}
-              className="w-36 absolute right-3 bottom-3"
-              alt=""
-            />
-          </div>
+          <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
+          <p className="text-xl text-left w-[15ch] px-6 ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
+          </p>
+          <img
+            src={bitcoin}
+            className="w-28 lg:w-32 absolute right-3 bottom-3"
+            alt=""
+          />
         </Tilt>
 
         <Tilt
           tiltEnable={true}
           className="lg:w-[31%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
-          <div className="Tilt-inner ">
-            <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
-            <p className="text-xl text-left w-[15ch] px-6 ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
-            </p>
-            <img
-              src={goal}
-              className="w-36 absolute right-3 bottom-3"
-              alt=""
-            />
-          </div>
+          <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
+          <p className="text-xl text-left w-[15ch] px-6 ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
+          </p>
+          <img
+            src={goal}
+            className="w-28 lg:w-32 absolute right-3 bottom-3"
+            alt=""
+          />
         </Tilt>
         <Tilt
           tiltEnable={true}
           className="Tilt lg:w-[31%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
-          <div className="Tilt-inner ">
-            <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
-            <p className="text-xl text-left w-[15ch] px-6 ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
-            </p>
-            <img
-              src={goal}
-              className="w-36 absolute right-3 bottom-3"
-              alt=""
-            />
-          </div>
+          <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
+          <p className="text-xl text-left w-[15ch] px-6 ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
+          </p>
+          <img
+            src={future}
+            className="w-28 lg:w-32 absolute right-3 bottom-3"
+            alt=""
+          />
         </Tilt>
 
 

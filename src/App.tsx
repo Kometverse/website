@@ -90,8 +90,9 @@ function App() {
     // top level container
     <div className="text-white relative w-full min-h-screen bg-primary ">
       <Navbar />
-      <div className="select-none xl:block blur-2xl w-44 h-44 top-[600px] right-56 absolute bg-[#8146FF]/50 rounded-full"></div>
+      {/* <div className="select-none xl:block blur-2xl w-44 h-44 top-[600px] right-56 absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="select-none xl:block blur-2xl w-44 h-44 top-[1100px] left-56 absolute bg-[#8146FF]/50 rounded-full"></div>
+  */}
       <div className="xl:w-[80%] m-auto ">
 
         <Hero />
@@ -100,7 +101,7 @@ function App() {
       </div>
       <CTA setEmail={setEmail} />
       <Footer />
-    </div>
+    </div >
   );
 }
 
