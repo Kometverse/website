@@ -1,7 +1,7 @@
 import bitcoin from "/bitcoin.svg";
 import goal from "/gals.svg";
 import future from "/future.svg";
-import Tilt from "react-tilt";
+import Tilt from 'react-parallax-tilt';
 
 export const TiltCards = () => {
   return (
@@ -11,8 +11,9 @@ export const TiltCards = () => {
       </p>
       <div className="lg:w-[90%] relative  flex-col flex lg:items-center lg:flex-row space-between  m-auto my-15 sm:mb-28 lg:mb-32">
        
-        <Tilt
-          options={{ max: 25 }}
+      
+          <Tilt
+          tiltEnable={true}
          className="Tilt lg:w-[31%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
           <div className="Tilt-inner ">
            <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
@@ -20,14 +21,15 @@ export const TiltCards = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
           </p>
           <img
-            src={bitcoin}
+            src={goal}
             className="w-36 absolute right-3 bottom-3"
             alt=""
           />   
           </div>
         </Tilt>
+          
           <Tilt
-          options={{ max: 25 }}
+          tiltEnable={true}
          className="Tilt lg:w-[31%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
           <div className="Tilt-inner ">
            <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
@@ -42,7 +44,7 @@ export const TiltCards = () => {
           </div>
         </Tilt>
           <Tilt
-          options={{ max: 25 }}
+          tiltEnable={true}
          className="Tilt lg:w-[31%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
           <div className="Tilt-inner ">
            <p className="text-4xl px-6 py-7 opacity-90">Secure Transections</p>
@@ -50,14 +52,14 @@ export const TiltCards = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
           </p>
           <img
-            src={future}
+            src={goal}
             className="w-36 absolute right-3 bottom-3"
             alt=""
           />   
           </div>
         </Tilt>
-
-    
+          
+          
       </div>
     </>
   );
