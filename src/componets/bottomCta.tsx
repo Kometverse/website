@@ -39,6 +39,7 @@ export const CTA = ({ setEmail }: Props) => {
       }
     } else {
       setMessage("")
+      setIsdisabled(true)
     }
 
   }, [value])
@@ -46,10 +47,10 @@ export const CTA = ({ setEmail }: Props) => {
 
   return (
     <>
-      <div className='w-full cta lg:py-32 py-20  flex flex-col items-center '>
+      <div id='cta' className='w-full cta lg:py-32 py-20  flex flex-col items-center '>
         <h1 className='text-3xl sm:text-5xl font-bold mb-10 lg:text-7xl '>claim early Access</h1>
         <form className=' w-full m-auto ' onSubmit={handleSubmit}>
-          <div className=' border rounded-full  lg:w-[60%] m-auto flex flex-row w-[90%] bg-white '>
+          <div className=' rounded-full  lg:w-[30%] m-auto  flex flex-row w-[90%] bg-white '>
             <input
               id="email"
               name="email"
@@ -59,9 +60,8 @@ export const CTA = ({ setEmail }: Props) => {
               placeholder="Enter your email"
               className="text-black grow rounded-full px-[5px] lg:px-4 text-sm outline-none sm:text-xl"
             />
-            <button className={btnStyles + " text-sm sm:text-lg  rounded-full bg-blue-500  lg:py-3 px-4  lg:px-6 py-2 lg:text-3xl"} disabled={isDissabled} type="submit">join waitlist</button>
+            <button className={btnStyles + " text-lg sm:text-lg  rounded-full cta-btn text-white   px-8  lg:px-10 py-2 lg:text-3xl"} disabled={isDissabled} type="submit">join</button>
           </div>
-          <p className='text-white text-center lg:text-xl' >{isValid ? message : message}</p>
         </form>
       </div>
     </>

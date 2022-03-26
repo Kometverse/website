@@ -1455,6 +1455,11 @@ isarray@~1.0.0:
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
 
+jquery@^3.1.1:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -1779,6 +1784,11 @@ react-router@6.2.2:
   dependencies:
     history "^5.2.0"
 
+react-tilt@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/react-tilt/-/react-tilt-0.1.4.tgz#0ac1f33674a3fff6c617cf411002d7ecdd2ebcb1"
+  integrity sha512-bVeRumg+RIn6QN8S92UmubGqX/BG6/QeQISBeAcrS/70dpo/jVj+sjikIawDl5wTuPdubFH8zH0EMulWIctsnw==
+
 react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
@@ -1982,6 +1992,13 @@ tailwindcss@^3.0.23:
     postcss-value-parser "^4.2.0"
     quick-lru "^5.1.1"
     resolve "^1.22.0"
+
+tilt.js@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/tilt.js/-/tilt.js-1.2.1.tgz#7d140ecb06744192815735e538b02739fe24d92f"
+  integrity sha512-IGRh3FJbq6BRH2ETb2KxDWont2k740oR+0QMs39QVkjnr7QmA6L1VzSKsOLgFXg5QNtHyRKp7vzFoJCYxgzsJA==
+  dependencies:
+    jquery "^3.1.1"
 
 tiny-warning@^1.0.2:
   version "1.0.3"
