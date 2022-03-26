@@ -6,8 +6,8 @@ import logo from "/log.svg"
 export const Navbar = () => {
     return (
         <>
-            <nav className="flex justify-between items-center px-10 py-3 mb-10 ">
-                <div className="select-none xl:block blur-2xl lg:w-40 w-20 h-20 lg:h-40  top-12 left-3 lg:-left-16 absolute bg-[#8146FF]/50 rounded-full"></div>
+            <nav className="flex justify-between items-center px-8 py-3 mb-10 ">
+                <div className="select-none xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  top-12 left-0 lg:-left-16 absolute bg-[#8146FF]/50 rounded-full"></div>
                 <img src={logo} className="w-20" alt="" />
                 <div className="hidden sm:flex items-center ">
 
