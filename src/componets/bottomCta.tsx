@@ -5,17 +5,18 @@ interface Props {
 import { useFormik } from 'formik';
 import { useEffect, useState } from 'react';
 
+import { useNavigate } from "react-router-dom";
+
 export const CTA = ({ setEmail }: Props) => {
   const [value, setValue] = useState("")
   const [isDissabled, setIsdisabled] = useState(true)
   const emailRegex = /\S+@\S+\.\S+/;
   const [isValid, setIsValid] = useState(false);
   const [message, setMessage] = useState('');
-
+  let navigate = useNavigate()
   const btnStyles = `${isDissabled ? "cursor-not-allowed" : "pointer"}`
   const handleChange = (e: any) => {
     setValue(e.target.value)
-
   }
 
   const handleSubmit = (e: any) => {
@@ -23,7 +24,7 @@ export const CTA = ({ setEmail }: Props) => {
     setEmail(value)
     console.log("yeah ")
     setValue("")
-
+    navigate("/rank")
   }
 
   useEffect(() => {
