@@ -34,8 +34,15 @@ h1 {
   );
 }
 
+.cta {
+  background: linear-gradient(90deg, #290b68 0%, #8146ff 100%);
+}
+
 .cta-btn {
-  background: linear-gradient(114.37deg, #290b68 35.38%, #ba9afd 106.71%);
+background: 
+Linear Gradient
+rgba(35, 10, 90, 1)
+rgba(35, 10, 90, 0.8)
   border-radius: 50px;
 }
 input:focus {
