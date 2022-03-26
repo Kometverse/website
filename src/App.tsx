@@ -18,6 +18,7 @@ import {
   where,
 } from "firebase/firestore";
 import { db } from "./firebase";
+import { TiltCards } from "./componets/titlcard";
 
 const queryParams = new URLSearchParams(window.location.search);
 const refralurl = queryParams.get("refID");
@@ -87,19 +88,17 @@ function App() {
 
   return (
     // top level container
-    <div className="">
-      <div className="text-white relative w-full min-h-screen bg-primary backdrop-blur-3xl ">
-        <Navbar />
-        <div className="xl:w-[80%] m-auto ">
-          <Hero />
-          <Intro />
-          <Features />
-        </div>
-
-        <CTA setEmail={setEmail} />
-
-        <Footer />
+    <div className="text-white relative w-full min-h-screen bg-primary ">
+      <Navbar />
+      <div className="xl:w-[80%] m-auto ">
+        <Hero />
+        <Intro />
+        {/* <Features />
+         */}
+        <TiltCards />
       </div>
+      <CTA setEmail={setEmail} />
+      <Footer />
     </div>
   );
 }

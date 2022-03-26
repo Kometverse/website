@@ -6,10 +6,7 @@ export const Features = () => {
     return (
         <>
             <div className="lg:w-[80%] relative  flex-col flex lg:items-center m-auto" >
-                <div className="select-none hidden xl:block blur-3xl w-96 h-96 -top-80 -left-40 absolute bg-[#8146FF]/50 rounded-full"></div>
 
-                <div className="select-none hidden lg:block blur-3xl w-96 h-96 top-[500px] -right-10 absolute bg-[#8146FF]/50 rounded-full"></div>
-                <div className="select-none hidden lg:block blur-3xl w-56 h-56 top-[1400px] -left-36 absolute bg-[#8146FF]/50 rounded-full"></div>
 
 
 
