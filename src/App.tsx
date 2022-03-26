@@ -25,20 +25,11 @@ console.log(refralurl);
 
 function App() {
   const useresref = collection(db, "users");
-  const [email, setEmail] = useState("yes.vikass.med@outlook.com");
-  const [submit, setSubmit] = useState(false);
-  const [isDisabled, setDisabled] = useState(true);
+  const [email, setEmail] = useState(null);
+  const [userExist, setUserExists] = useState(false)
   const [newUser, setNewUser] = useState({});
-  const handleChnage = (e: any) => {
-    setEmail(e.target.value);
-    if (email.length > 3) {
-      console.log("you can click now ");
-    }
-  };
-  const onClick = (e: any) => {
-    setSubmit(!submit);
-    console.log("hello");
-  };
+  const [newRefUrl, setNewrefurl]  =("")
+  const onSubmit = (data:any) => console.log(data)
 
   const createNewUser = async () => {
     const newrefID = uuidv4();
@@ -53,11 +44,15 @@ function App() {
     setNewUser(() => {
       return { ...newuserData };
     });
-    console.log(newUser);
+    setNewUser(`http://localhost:3000?refID=${newrefID}`)
+    console.log()
+    console.log(newuserData);
   };
 
   useEffect(() => {
+    if(email) {
     (async () => {
+      console.log(email)
       // rrab users db refrance
       // user email query
       const emailQuery = query(useresref, where("email", "==", email));
@@ -72,6 +67,7 @@ function App() {
         } else {
           const userq = query(useresref, where("refID", "==", refralurl));
           const refralUser = await getDocs(userq);
+          console.log(refralUser)
           if (!refralUser.empty) {
             // update user point and create nw user
             const refralUserDaata = refralUser.docs[0].data();
@@ -79,14 +75,16 @@ function App() {
             updateDoc(docref, {
               points: refralUserDaata.points + 1,
             });
-
+            console.log(refralUserDaata)
             createNewUser();
           } else {
           }
         }
       }
     })();
-  }, []);
+ 
+    }
+ }, [email]);
 
   return (
     // top level container
@@ -94,14 +92,10 @@ function App() {
       <div className="text-white relative w-full min-h-screen bg-primary backdrop-blur-3xl ">
         <div className="xl:w-[80%] m-auto ">
           <Navbar />
-          <Hero
-            onClick={onClick}
-            isdisabled={isDisabled}
-            handleChnage={handleChnage}
-          />
+          <Hero/>
           <Intro />
           <Features />
-          <CTA />
+          <CTA setEmail={setEmail}/>
           <Footer />
         </div>
       </div>

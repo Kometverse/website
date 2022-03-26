@@ -1,13 +1,62 @@
-export const CTA = () => {
-    return (
-        <>
-            <div className="py-10 mb-20 m-auto  intro-gradient rounded-2xl w-full   bold flex flex-col items-center lg:flex-row lg:w-[70%] lg:px-12  ">
-                <h2 className="text-center text-3xl font-bold mb-5 lg:m-0  w-[20ch] lg:w-[25ch] lg:text-3xl px-4" >Be the first to get notified of the latest updates </h2>
-                <div className="rounded-full bg-white flex justify-between w-[95%]  sm:w-[60%] ">
-                    <input type="text" className="rounded-full px-2" placeholder="enter your email " />
-                    <button className="cta-btn py-2 px-7 lg:px-12 lg:text-2xl">join</button>
-                </div>
-            </div>
-        </>
-    )
+interface Props {
+    setEmail: any
+}
+ import { useFormik } from 'formik';
+import { useEffect, useState } from 'react';
+
+export const CTA = ({setEmail} :Props) => {
+  const [value, setValue] = useState("") 
+  const [isDissabled, setIsdisabled] = useState(true)
+    const emailRegex = /\S+@\S+\.\S+/;
+   const [isValid, setIsValid] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const btnStyles = `${isDissabled ? "cursor-not-allowed" : "pointer"}`
+ const handleChange = (e:any) =>{
+    setValue(e.target.value)
+    
+ }  
+
+ const handleSubmit = (e:any) => {
+   e.preventDefault();
+   setEmail(value)
+   console.log("yeah ")
+
+ }
+
+ useEffect(() => {
+     if(value.length) {
+    if (emailRegex.test(value)) {
+      setIsValid(true);
+      setMessage('Your email looks good!');
+      setIsdisabled(false)
+    } else {
+      setIsValid(false);
+      setMessage("your email is not valid")
+      setIsdisabled(true)
+    }
+     }else {
+       setMessage("")
+     }
+   
+   }, [value])
+
+
+   return (
+     <>
+      <form onSubmit={handleSubmit}>
+       <label htmlFor="email">Email Address</label>
+       <input
+         id="email"
+         name="email"
+         type="email"
+         onChange={handleChange}
+         value={value}
+         className="text-black"
+       />
+       <button className= {btnStyles} disabled={isDissabled} type="submit">Submit</button>
+     </form>
+   <p className='text-white'>{isValid ? message : message}</p>  
+     </>
+   );
 }
