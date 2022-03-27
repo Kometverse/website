@@ -1,4 +1,5 @@
 import backArrow from "/backarrow.svg";
+import quit from "/quit.svg"
 import ast from "/ast.svg";
 import future from "/future.svg";
 import copyimg from "/copy.svg";
@@ -30,8 +31,8 @@ export const Rank = ({ user }: Props) => {
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="h-screen text-white">
         <img
-          src={backArrow}
-          className="cursor-pointer w-8 lg:w-12"
+          src={quit}
+          className="cursor-pointer w-8 p-5 lg:w-12"
           onClick={() => {
             navigate("/");
           }}
