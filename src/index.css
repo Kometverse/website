@@ -11,12 +11,6 @@ html {
 button:focus {
   outline: none;
 }
-/* 
-* {
-
-  font-family: "Sora", sans-serif;
-} */
-
 .icon:hover {
   transition: 0.9s;
   transform: rotateY(180deg);
