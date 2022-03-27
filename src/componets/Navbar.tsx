@@ -17,10 +17,6 @@ export const Navbar = () => {
                     <a href="#" className="icon w-6 mx-4"><img src={mail} alt="" /></a>
                     <a href="#cta" className="mx-6 cta   font-bold py-2 px-4 text-sm rounded-md">Join Waitlist</a>
                 </div>
-                {/* only show on mobile view  */}
-
-
-
             </nav>
         </>
     )
