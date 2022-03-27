@@ -107,16 +107,7 @@ function App() {
   }, [email]);
 
   return (
-    // <div className="text-white relative w-full min-h-screen bg-primary ">
-    //   <Navbar />
-    //   <div className="xl:w-[80%] m-auto ">
-    //     <Hero />
-    //     <Intro />
-    //     <TiltCards />
-    //   </div>
-    //   <CTA setEmail={setEmail} />
-    //   <Footer />
-    // </div >
+
 
     <Routes>
       <Route path="/" element={<Home setEmail={setEmail} />} />
