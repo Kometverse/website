@@ -38,7 +38,7 @@ export const Rank = ({ user }: Props) => {
           height={height}
           onConfettiComplete={() => null}
         />
-        <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:top-0 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
+        <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-top-20 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
         <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
         <div className="h-[60vh] text-white">
           <p className="font-normal text-3xl p-4 cursor-pointer" onClick={() => navigate('/')}>X</p>
