@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <>
             <div className="w-full mt-5 py-5 flex items-center justify-around text-sm  lg:text-">
-                <img src={logo} className="w-20" alt="" />
+                <img src={logo} className="lg:w-20 w-12 " alt="" />
                 <p className="text-[12px]">Made with <i className="text-red-500">❤️</i> from india for global  </p>
                 <div className="flex">
                     <img className="w-4 lg:w-7" src={discord} alt="" />
