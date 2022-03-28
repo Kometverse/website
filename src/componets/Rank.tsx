@@ -51,9 +51,9 @@ export const Rank = ({ user }: Props) => {
       <p className="font-normal text-3xl p-4 cursor-pointer text-white" onClick={() => navigate('/')}>X</p>
       <div className="justify-centre text-white overflow-hidden leading-10 flex flex-col items-center">
         <img src={ast} className="w-44 lg:w-48" alt="" />
-        {/* <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
+        <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
           That's Cool <img src={future} className=" mx-2 w-6" alt="" />
-        </h2> */}
+        </h2>
         <p className="rankjoin font-bold text-xl">
           Thanks for joining the waitlist!
         </p>
