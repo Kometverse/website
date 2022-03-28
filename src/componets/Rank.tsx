@@ -50,12 +50,12 @@ export const Rank = ({ user }: Props) => {
             Thanks for joining the waitlist!
           </p>
           <p>Your Current Postion</p>
-          <div className="border w-[90%] text-center text-xl p-2 max-w-md">
+          <div className="border border-[#8146FF] w-[90%] text-center text-xl p-2 max-w-md">
             # {rank >= 0 ? rank : "loading....."}
           </div>
 
           <p className="text-sm my-4">
-            Earn intergalactic rewards by inviting rewards
+            The first 1000 frens can get an exclusive NFT airdrop of worth $100 🎉
           </p>
           <div className="flex justify-between  w-[90%] text-sm max-w-xs ">
             {/* <div className="p-2">
@@ -76,7 +76,7 @@ export const Rank = ({ user }: Props) => {
               
               onClick={() => setisCopied(true)}
             >
-              <button className="w-full intro-gradient rounded-lg p-2 text-xl ">invite friends</button>
+              <button className="w-full intro-gradient rounded-lg p-2 text-xl  ">invite friends</button>
             </RWebShare>
           </div>
           <p className="text-green-500"> {isCopied ? "link  copied" : ""}</p>

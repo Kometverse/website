@@ -15,7 +15,7 @@ export const TiltCards = () => {
           tiltReverse={true}
           className="lg:w-[33%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
           <p className="text-3xl p-6 opacity-90">Secure Transections</p>
-          <p className="text-lg text-left w-[25ch] px-6 ">
+          <p className="text-lg text-left w-[22ch] px-6 ">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
           </p>
           <img
@@ -30,7 +30,7 @@ export const TiltCards = () => {
           tiltReverse={true}
           className="lg:w-[33%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
           <p className="text-3xl p-6 opacity-90">Credibilty in in-game tokens and NFTs</p>
-          <p className="text-lg text-left w-[25ch] px-6 ">
+          <p className="text-lg text-left w-[22ch] px-6 ">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
           </p>
           <img
@@ -44,7 +44,7 @@ export const TiltCards = () => {
           tiltReverse={true}
           className="Tilt lg:w-[33%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
           <p className="text-3xl p-6 opacity-90">Easy access to the future</p>
-          <p className="text-xl text-left w-[25ch] px-6 ">
+          <p className="text-xl text-left w-[22ch] px-6 ">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
           </p>
           <img
