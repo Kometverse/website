@@ -1,5 +1,4 @@
 import backArrow from "/backarrow.svg";
-import quit from "/quit.svg"
 import ast from "/ast.svg";
 import future from "/future.svg";
 import copyimg from "/copy.svg";
@@ -30,14 +29,7 @@ export const Rank = ({ user }: Props) => {
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:top-0 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="h-screen text-white">
-        <img
-          src={quit}
-          className="cursor-pointer w-8 p-5 lg:w-12"
-          onClick={() => {
-            navigate("/");
-          }}
-          alt=""
-        />
+          <p className="font-normal text-3xl p-4 cursor-pointer" onClick={() => navigate('/')}>X</p> 
         <div className="justify-center h-full overflow-hidden leading-10 flex flex-col items-center">
           <img src={ast} className="w-44 lg:w-48" alt="" />
           <h2 className="flex text-lg leading-6 lg:text-2xl">

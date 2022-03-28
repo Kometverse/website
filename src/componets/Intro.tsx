@@ -25,9 +25,9 @@ export const Intro = () => {
                 <div className="hidden lg:block">
                     <img className="w-[40%]  max-w-[100px] absolute -top-20 right-12  sm:max-w-[200px] rounded-full sm:mx-5 mx-3  my-4" src={game2} alt="" />
                     <img className="w-[40%]  max-w-[100px] absolute bottom-0 right-16  sm:max-w-[150px]  rounded-full sm:mx-5 mx-3  my-4" src={game6} alt="" />
-                    <img className="w-[40%]  max-w-[100px] absolute  -right-[60px] sm:max-w-[130px]  rounded-full sm:mx-5 mx-3  my-4" src={game1} alt="" />
-                    <img className="w-[40%]  max-w-[100px] absolute -bottom-10 -right-8 sm:max-w-[100px] rounded-full  sm:ml-7 mx-3  my-4" src={game3} alt="" />
-                    <img className="w-[40%]  max-w-[100px] absolute  right-[250px]  sm:max-w-[150px] lg:w-[190px] rounded-full sm:mx-5 mx-3  my-4" src={game5} alt="" />
+                    <img className="w-[40%]  max-w-[100px] absolute  -right-[60px] top-20 sm:max-w-[130px]  rounded-full sm:mx-5 mx-3  my-4" src={game1} alt="" />
+                    <img className="w-[40%]  max-w-[100px] absolute -bottom-10 -right-8 sm:max-w-[100px]  rounded-full  sm:ml-7 mx-3  my-4" src={game3} alt="" />
+                    <img className="w-[40%]  max-w-[100px] absolute  right-[200px] top-20 sm:max-w-[150px] lg:w-[190px] rounded-full sm:mx-5 mx-3  my-4" src={game5} alt="" />
                 </div>
             </div>
 
