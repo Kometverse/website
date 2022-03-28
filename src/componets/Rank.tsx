@@ -5,7 +5,6 @@ import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 
 
 import { useEffect, useState } from "react";
-import useCopyHook from "../useCopyClipBoard";
 import { useNavigate } from "react-router-dom";
 import { RWebShare } from "react-web-share";
 import Confetti from 'react-confetti'

@@ -1,4 +1,3 @@
-import emoji from "/emoji.svg"
 
 export const Hero = () => {
     return (
