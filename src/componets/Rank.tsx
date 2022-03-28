@@ -9,7 +9,6 @@ import useCopyHook from "../useCopyClipBoard";
 import { useNavigate } from "react-router-dom";
 import { RWebShare } from "react-web-share";
 import Confetti from 'react-confetti'
-const useresref = collection(db, "users");
 
 interface Props {
   user: any;
@@ -23,15 +22,33 @@ export const Rank = ({ user }: Props) => {
   const [reflink, setrefLink] = useState("");
   const [isCopied, setisCopied] = useState(false);
 
-  useEffect(() => {
-    // console.log(users)
-    // console.log(user)
-    window.scroll({
-      top: 0,
-      left: 0
-    })
 
-    setRank(user.points + 500);
+  useEffect(() => {
+    (
+      async () => {
+        let userRefID = await user.refID;
+        let sortedArray: any = []
+        const sortedUser = collection(db, 'users');
+        const q = query(sortedUser, orderBy("points", "desc"));
+        const sortedUsers = (await getDocs(q)).docs;
+        sortedUsers.forEach((doc) => {
+          // console.log(doc)
+          sortedArray.push({ ...doc.data(), id: doc.id })
+        })
+
+        sortedArray = Array.from(sortedArray);
+        console.log(sortedArray)
+        sortedArray.forEach((item: any) => {
+          if (item.refID === user.refID) {
+
+            setRank(sortedArray.indexOf(item) + 500)
+          }
+        });
+      }
+
+
+    )()
+
     // console.log(user.points);
     setrefLink("?refID=" + user.refID);
   });
@@ -69,7 +86,7 @@ export const Rank = ({ user }: Props) => {
           <RWebShare
             data={{
               text: "",
-              url: `https://komet-beta.vercel.app?refID=${user.refID}`,
+              url: `https://komet-xi.vercel.app/?refID=${user.refID}`,
               title: "Invite freinds",
             }}
 
