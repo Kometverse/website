@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { CTA } from "./componets/bottomCta";
-import { Features } from "./componets/Features";
 import { Footer } from "./componets/footer";
 import { Hero } from "./componets/Hero";
 import { Intro } from "./componets/Intro";
@@ -50,8 +49,6 @@ const Home = ({ setEmail }: Props) => {
 function App() {
   const useresref = collection(db, "users");
   const [email, setEmail] = useState(null);
-  const [userExist, setUserExists] = useState(false);
-  const [newUser, setNewUser] = useState({});
   const [user, setUser] = useState({})
   const onSubmit = (data: any) => console.log(data);
 

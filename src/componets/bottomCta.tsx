@@ -2,9 +2,7 @@ interface Props {
 
   setEmail: any
 }
-import { useFormik } from 'formik';
 import { useEffect, useState } from 'react';
-
 import { useNavigate } from "react-router-dom";
 
 export const CTA = ({ setEmail }: Props) => {
@@ -24,7 +22,7 @@ export const CTA = ({ setEmail }: Props) => {
     setEmail(value)
     console.log("yeah ")
     setValue("")
-    navigate("/rank")
+    navigate(`/rank?email=`)
   }
 
   useEffect(() => {
