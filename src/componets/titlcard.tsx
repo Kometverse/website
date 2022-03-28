@@ -55,6 +55,7 @@ export const TiltCards = () => {
         </Tilt>
 
 
+                <div className="select-none z-0 xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  hidden lg:-left-36 -bottom-28 absolute bg-[#8146FF]/50 rounded-full"></div>
       </div>
     </>
   );

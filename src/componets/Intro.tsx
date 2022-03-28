@@ -8,7 +8,10 @@ import game6 from "/game6.svg"
 export const Intro = () => {
     return (
         <>
+
             <div className="py-12 my-16 intro-gradient px-3 w-[95%] 2xl:w-[80%]  m-auto rounded-3xl lg:flex relative  lg:my-28">
+
+                <div className="select-none xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  hidden -top-20 lg:-right-32 absolute bg-[#8146FF]/50 rounded-full"></div>
                 <div className="flex flex-col items-center text-center lg:items-start px-4  lg:ml-6">
                     <h1 className="max-w-[20ch] sm:text-6xl mb-5 text-4xl leading font-bold  text-center leading-relaxed lg:text-left lg:text-5xl lg:w-[15ch] xl:text-6xl line ">Unlocking your digital world</h1>
                     <p className="sm:text-2xl  text-lg max-w-[40ch] lg:max-w-[25ch]  mb-8 text-center lg:text-left">A simplify wallet infrastructure for web3 games and NFTs</p>

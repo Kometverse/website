@@ -6,12 +6,15 @@ import { useEffect, useState } from "react";
 import useCopyHook from "../useCopyClipBoard";
 import { useNavigate } from "react-router-dom";
 import { RWebShare } from "react-web-share";
-
+import Confetti from 'react-confetti'
 interface Props {
   user: any;
 }
 
 export const Rank = ({ user }: Props) => {
+  const height = window.innerHeight;
+  const width = window.innerWidth;
+
   let navigate = useNavigate();
   const [rank, setRank] = useState(0);
   const [reflink, setrefLink] = useState("");
@@ -26,6 +29,14 @@ export const Rank = ({ user }: Props) => {
 
   return (
     <>
+     <Confetti
+     numberOfPieces={20}
+     tweenDuration={20}
+     
+      width={width}
+      height={height}
+      onConfettiComplete={() => null}
+    />
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:top-0 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="h-screen text-white">

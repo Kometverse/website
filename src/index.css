@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +8,13 @@ html {
   scroll-behavior: smooth;
   line-height: 1;
   overflow-x: hidden;
+  font-family: 'Space Grotesk', sans-serif;
 }
+
+* {
+  font-family: inherit;
+}
+
 button:focus {
   outline: none;
 }
@@ -35,9 +41,7 @@ nav {
   background: linear-gradient(80deg, #290b68 0%, #8146ff 100%);
 }
 
-.cta h1 {
-  font-family: "Courier New", Courier, monospace;
-}
+
 .web3-text {
   background-image: linear-gradient(
     rgba(129, 70, 255, 1),
