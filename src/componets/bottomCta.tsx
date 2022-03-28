@@ -48,10 +48,10 @@ export const CTA = ({ setEmail }: Props) => {
 
   return (
     <>
-      <div id='cta' className='w-full cta lg:pt-20  lg:pb-32 py-18 flex flex-col items-center mt-12'>
+      <div id='cta' className='w-full cta lg:pt-20  lg:pb-32 py-16 lg:py-32 flex flex-col items-center mt-12'>
         <h1 className='text-3xl sm:text-5xl font-bold mb-10 lg:text-7xl '>Claim Early Access</h1>
         <form className=' w-full m-auto ' onSubmit={handleSubmit}>
-          <div className=' rounded-full  lg:w-[50%] m-auto  flex flex-row w-[90%] bg-white '>
+          <div className=' rounded-full  lg:w-[40%] m-auto  flex flex-row w-[90%] bg-white '>
             <input
               id="email"
               name="email"
