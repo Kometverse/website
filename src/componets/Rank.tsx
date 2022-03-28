@@ -31,15 +31,15 @@ export const Rank = ({ user }: Props) => {
       <Confetti
         numberOfPieces={20}
         tweenDuration={20}
-        width={width}
-        height={height}
-        onConfettiComplete={() => null}
+        width={ }
+        height={400px}
+      onConfettiComplete={() => null}
       />
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-top-20 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="h-[60vh] text-white">
         <p className="font-normal text-3xl p-4 cursor-pointer" onClick={() => navigate('/')}>X</p>
-        <div className="justify-center h-full overflow-hidden leading-10 flex flex-col items-center">
+        <div className="justify-center h-screen overflow-hidden leading-10 flex flex-col items-center">
           <img src={ast} className="w-44 lg:w-48" alt="" />
           <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
             That's Cool <img src={future} className=" mx-2 w-6" alt="" />
