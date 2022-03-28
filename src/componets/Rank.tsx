@@ -1,10 +1,16 @@
 import ast from "/ast.svg";
 import future from "/future.svg";
+import { db } from "../firebase";
+import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
+
+
 import { useEffect, useState } from "react";
 import useCopyHook from "../useCopyClipBoard";
 import { useNavigate } from "react-router-dom";
 import { RWebShare } from "react-web-share";
 import Confetti from 'react-confetti'
+const useresref = collection(db, "users");
+
 interface Props {
   user: any;
 }
@@ -12,16 +18,17 @@ interface Props {
 export const Rank = ({ user }: Props) => {
   const height = window.innerHeight;
   const width = window.innerWidth;
-
   let navigate = useNavigate();
   const [rank, setRank] = useState(0);
   const [reflink, setrefLink] = useState("");
   const [isCopied, setisCopied] = useState(false);
 
   useEffect(() => {
-    console.log(user)
-    setRank(user.refID);
-    console.log(user.points);
+    // console.log(users)
+    // console.log(user)
+
+    setRank(user.points + 500);
+    // console.log(user.points);
     setrefLink("?refID=" + user.refID);
   });
 
@@ -31,13 +38,13 @@ export const Rank = ({ user }: Props) => {
       <Confetti
         numberOfPieces={20}
         tweenDuration={20}
-        width={300}
-        height={400}
+        width={800}
+        height={500}
         onConfettiComplete={() => null}
       />
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-top-20 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
       <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
-      <div className="h-[60vh] text-white">
+      <div className="h-screen text-white">
         <p className="font-normal text-3xl p-4 cursor-pointer" onClick={() => navigate('/')}>X</p>
         <div className="justify-center h-screen overflow-hidden leading-10 flex flex-col items-center">
           <img src={ast} className="w-44 lg:w-48" alt="" />
@@ -65,7 +72,7 @@ export const Rank = ({ user }: Props) => {
 
               onClick={() => setisCopied(true)}
             >
-              <button className="w-full intro-gradient rounded-lg p-2 text-xl  ">invite friends</button>
+              <button className="w-full intro-gradient rounded-lg p-2 text-xl  ">Invite Friends</button>
             </RWebShare>
           </div>
           <p className="lg:block hidden text-green-500"> {isCopied ? "link  copied" : ""}</p>
