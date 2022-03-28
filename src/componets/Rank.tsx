@@ -26,7 +26,6 @@ export const Rank = ({ user }: Props) => {
   useEffect(() => {
     (
       async () => {
-        let userRefID = await user.refID;
         let sortedArray: any = []
         const sortedUser = collection(db, 'users');
         const q = query(sortedUser, orderBy("points", "desc"));
@@ -40,7 +39,6 @@ export const Rank = ({ user }: Props) => {
         console.log(sortedArray)
         sortedArray.forEach((item: any) => {
           if (item.refID === user.refID) {
-
             setRank(sortedArray.indexOf(item) + 500)
           }
         });
