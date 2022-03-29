@@ -9,7 +9,7 @@ export const TiltCards = () => {
       <p className="px-5  text-center max-w-[35ch] text-4xl bold mb-4  sm:text-7xl lg:py-10 font-bold m-auto  ">
         Unlocking your digital world
       </p>
-      <div className="w-full  lg:w-full  lg:flex  justify-between relative  mb-32 ">
+      <div className="w-[90%] m-auto lg:w-full  lg:flex  justify-between relative  mb-32 ">
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
