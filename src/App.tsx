@@ -34,7 +34,7 @@ const Home = ({ setEmail }: Props) => {
     <>
       <div className="text-white relative w-full min-h-screen bg-primary ">
         <Navbar />
-        <div className="xl:w-[80%] m-auto ">
+        <div className="xl:w-[90%] m-auto ">
           <Hero />
           <Intro />
           <TiltCards />

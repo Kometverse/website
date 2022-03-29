@@ -6,54 +6,53 @@ import Tilt from 'react-parallax-tilt';
 export const TiltCards = () => {
   return (
     <>
-      <p className="px-5  text-center max-w-[35ch] text-4xl bold mb-4  sm:text-7xl lg:py-10 font-bold m-auto ">
+      <p className="px-5  text-center max-w-[35ch] text-4xl bold mb-4  sm:text-7xl lg:py-10 font-bold m-auto  ">
         Unlocking your digital world
       </p>
-      <div className="lg:w-full w-[90%] relative  flex-col flex lg:items-center lg:flex-row space-between  m-auto my-15 sm:mb-28 lg:mb-32">
+      <div className="w-full  lg:w-full  lg:flex  justify-between relative  mb-32 ">
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[31%]  m-auto  max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-4  sm:px-12 lg:px-2 ">
-          <p className="text-4xl lg:text-4xl  py-2  px-6 lg:p-6  ">Secure Transactions
+          className="lg:w-[32%]  card relative min-h-[350px]  p-5  sm:max-w-lg m-auto">
+          <p className="text-3xl ">Secure Transactions
           </p>
-          <p className="w-[22ch] text-lg text-left lg:w-[24ch] lg:text-lg  px-5 ">
+          <p className="text-lg my-2 ">
             Take control of your assets by setting up a security layer over each protocol you interact with. Easily recover your wallet
           </p>
           <img
             src={bitcoin}
-            className="w-28  lg:w-36 absolute right-3 bottom-3 float-right"
+            className="w-28 lg:w-32 xl:w-44 absolute bottom-0 right-2"
             alt=""
           />
         </Tilt>
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[31%] sm:px-12  m-auto  max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-4 lg:px-2">
-          <p className="text-4xl lg:text-4xl  py-2 px-4 lg:p-6 ">Credibilty in in-game tokens and NFTs
+          className="lg:w-[32%]  card relative min-h-[350px] my-5 lg:m-0   p-5 sm:max-w-lg m-auto">
+          <p className="text-3xl ">Credibilty in in-game tokens and NFTs
           </p>
-          <p className="w-[22ch] text-lg text-left lg:w-[24ch] lg:text-lg  px-5 ">
+          <p className="text-lg my-2 lg:w-[30ch]  w-[23ch]">
             Convert in-game assets to NFTs and vice versa. Trade only credible assets with Komet safety score.
           </p>
           <img
             src={goal}
-            className="w-28  lg:w-30 absolute right-3 bottom-3 float-right"
+            className="w-28 lg:w-32  xl:w-44  absolute bottom-4 right-2"
             alt=""
           />
         </Tilt>
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[31%] sm:px-12  m-auto  max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-4  lg:px-2">
-          <p className="text-4xl lg:text-4xl  py-2 px-4 lg:p-6 ">Easy access to the future
+          className="lg:w-[32%]  card relative min-h-[350px]  p-5 sm:max-w-lg m-auto">
+          <p className="text-3xl ">Easy access to the future
           </p>
-          <p className="w-[22ch] text-lg text-left lg:w-[25ch] lg:text-gl  px-5 ">
-
+          <p className=" my-2 text-lg ">
             Be the first one to access simplified multi-chain experience from the interoperable gaming universe.
           </p>
-          <p className="w-[22ch] text-lg text-left lg:w-[24ch] lg:text-lg  px-5">Earn, invest and save with your friends.</p>
+          <p className="text-lg lg:w-[25ch] w-[20ch] my-2">Earn, invest and save with your friends.</p>
           <img
             src={future}
-            className="w-28  lg:w-30 xl:w-32 absolute right-3 bottom-3 float-right"
+            className="w-28 lg:w-32 xl:w-44 absolute bottom-0 right-2"
             alt=""
           />
         </Tilt>
