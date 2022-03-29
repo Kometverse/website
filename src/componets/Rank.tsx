@@ -3,7 +3,6 @@ import future from "/future.svg";
 import { db } from "../firebase";
 import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { useParams } from "react-router-dom";
 
 
 
@@ -16,15 +15,14 @@ interface Props {
   user: any;
 }
 
-export const Rank = () => {
-  let { id } = useParams()
+export const Rank = ({ user }: Props) => {
   const height = window.innerHeight;
   const width = window.innerWidth;
   let navigate = useNavigate();
   const [rank, setRank] = useState(0);
   const [reflink, setrefLink] = useState("");
   const [isCopied, setisCopied] = useState(false);
-  let user: any;
+
 
 
   useEffect(() => {
@@ -32,13 +30,6 @@ export const Rank = () => {
       async () => {
         let sortedArray: any = []
         const sortedUser = collection(db, 'users');
-
-        console.log(id)
-        if (id) {
-          const userexistref = query(sortedUser, where("email", "==", id));
-          const existeduserData = (await getDocs(userexistref)).docs[0].data()
-          user = existeduserData;
-        }
         const q = query(sortedUser, orderBy("points", "desc"));
         const sortedUsers = (await getDocs(q)).docs;
         sortedUsers.forEach((doc) => {
