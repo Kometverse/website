@@ -22,7 +22,7 @@ export const CTA = ({ setEmail }: Props) => {
     setEmail(value)
     console.log("yeah ")
     setValue("")
-    navigate(`/rank/${value}`)
+    navigate(`/rank`)
   }
 
   useEffect(() => {

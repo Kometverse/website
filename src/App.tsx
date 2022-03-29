@@ -106,7 +106,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home setEmail={setEmail} />} />
-      <Route path="/rank/:id" element={<Rank user={user} />} />
+      <Route path="/rank" element={<Rank user={user} />} />
     </Routes>
   );
 }
