@@ -24,7 +24,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="text-center opacity-40 pb-8">
-                <p className="text-[13px]">&copy; 2022 KOMET | all rights reserved 	</p>
+                <p className="text-[13px]">&copy; 2022 KOMET | All rights reserved	</p>
             </div>
         </>
     )
