@@ -13,7 +13,7 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[32%]  card relative min-h-[350px]  p-5  sm:max-w-lg m-auto">
+          className="lg:w-[32%]  card relative min-h-[350px]  p-5 rounded-xl  sm:max-w-lg m-auto">
           <p className="text-3xl ">Secure Transactions
           </p>
           <p className="text-lg my-2 ">
@@ -28,7 +28,7 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[32%]  card relative min-h-[350px] my-5 lg:m-0   p-5 sm:max-w-lg m-auto">
+          className="lg:w-[32%]  card relative min-h-[350px] rounded-xl my-5 lg:m-0   p-5 sm:max-w-lg m-auto">
           <p className="text-3xl ">Credibilty in in-game tokens and NFTs
           </p>
           <p className="text-lg my-2 lg:w-[30ch]  w-[23ch]">
@@ -43,7 +43,7 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[32%]  card relative min-h-[350px]  p-5 sm:max-w-lg m-auto">
+          className="lg:w-[32%]  card relative min-h-[350px] rounded-xl  p-5 sm:max-w-lg m-auto">
           <p className="text-3xl ">Easy access to the future
           </p>
           <p className=" my-2 text-lg ">
