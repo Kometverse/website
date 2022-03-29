@@ -1,5 +1,6 @@
 import ast from "/ast.svg";
 import future from "/future.svg";
+import bitcoin from "/bitcoin.svg"
 import { db } from "../firebase";
 import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 import { AiOutlineCloseCircle } from "react-icons/ai";
@@ -79,7 +80,7 @@ export const Rank = ({ user }: Props) => {
         <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-top-20 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
         <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
 
-        <img src={ast} className="w-44 h-44 lg:w-48" alt="" />
+        <img src={bitcoin} className="w-44 h-44 lg:w-48" alt="" />
         <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
           That's Cool <img src={future} className=" mx-2 w-6" alt="" />
         </h2>
