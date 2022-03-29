@@ -15,6 +15,7 @@
     "react-confetti": "^6.0.1",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.28.1",
+    "react-icons": "^4.3.1",
     "react-parallax-tilt": "^1.6.6",
     "react-router-dom": "^6.2.2",
     "react-web-share": "^1.1.5",

@@ -46,18 +46,13 @@ export const TiltCards = () => {
           className="lg:w-[33%]  m-auto  lg:mx-5 max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-5 ">
           <p className="text-3xl lg:text-4xl pb-2 px-4 lg:p-6 ">Easy access to the future</p>
           <p className=" text-lg w-[23ch] text-left lg:w-[26ch] lg:text-xl  px-5 ">
-            Be the first one to access simplified multi-chain experience from the interoperable gaming universe . Earn, invest and save with your friends.          </p>
+            Be the first one to access simplified multi-chain experience from the interoperable gaming universe  Earn, invest and save with your friends.          </p>
           <img
             src={future}
             className="w-24  lg:w-36 absolute right-3 bottom-0 float-right"
             alt=""
           />
         </Tilt>
-
-
-
-
-
         <div className="select-none z-0 xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  hidden lg:-left-36 -bottom-28 absolute bg-[#8146FF]/50 rounded-full"></div>
       </div>
     </>
