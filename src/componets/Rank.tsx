@@ -99,7 +99,7 @@ export const Rank = ({ user }: Props) => {
           <RWebShare
             data={{
               text: "",
-              url: `https://komet-xi.vercel.app/?refID=${user.refID}`,
+              url: `https://komet-chi.vercel.app/?refID=${user.refID}`,
               title: "Invite freinds",
             }}
 
