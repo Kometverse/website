@@ -13,22 +13,23 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[33%]  m-auto  lg:mx-5 max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-5 ">
-          <p className="text-3xl lg:text-4xl  py-2 px-4 lg:p-6 ">Secure Transections</p>
+          className="lg:w-[31%]  m-auto  max-w-[800px] card rounded-xl relative  min-h-[350px] my-4 py-2  sm:px-12 lg:px-2">
+          <p className="text-4xl lg:text-4xl  py-2  px-6 lg:p-6  ">Secure Transections
+          </p>
           <p className="w-[22ch] text-lg text-left lg:w-[26ch] lg:text-xl  px-5 ">
-            Take control of your assets by setting up a security layer over each protocol you interact with. Easily recover your wallet.
+            Take control of your assets by setting up a security layer over each protocol you interact with. Easily recover your wallet
           </p>
           <img
             src={bitcoin}
-            className="w-28  lg:w-40 absolute right-3 bottom-0 float-right"
+            className="w-28  lg:w-36 absolute right-3 bottom-3 float-right"
             alt=""
           />
         </Tilt>
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[33%]  m-auto  lg:mx-5 max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-5 ">
-          <p className="text-2xl lg:text-4xl  py-2 px-4 lg:p-6 ">Credibilty in in-game tokens and NFTs
+          className="lg:w-[31%] sm:px-12  m-auto  max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-2 lg:px-2">
+          <p className="text-4xl lg:text-4xl  py-2 px-4 lg:p-6 ">Credibilty in in-game tokens and NFTs
           </p>
           <p className="w-[22ch] text-lg text-left lg:w-[26ch] lg:text-xl  px-5 ">
 
@@ -43,13 +44,16 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[33%]  m-auto  lg:mx-5 max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-5 ">
-          <p className="text-3xl lg:text-4xl pb-2 px-4 lg:p-6 ">Easy access to the future</p>
-          <p className=" text-lg w-[23ch] text-left lg:w-[26ch] lg:text-xl  px-5 ">
-            Be the first one to access simplified multi-chain experience from the interoperable gaming universe  Earn, invest and save with your friends.          </p>
+          className="lg:w-[31%] sm:px-12  m-auto  max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-2  lg:px-2">
+          <p className="text-4xl lg:text-4xl  py-2 px-4 lg:p-6 ">Easy access to the future
+          </p>
+          <p className="w-[22ch] text-lg text-left lg:w-[26ch] lg:text-xl  px-5 ">
+
+            Be the first one to access simplified multi-chain experience from the interoperable gaming universe Earn, invest and save with your friends.
+          </p>
           <img
             src={future}
-            className="w-24  lg:w-36 absolute right-3 bottom-0 float-right"
+            className="w-28  lg:w-36 absolute right-3 bottom-3 float-right"
             alt=""
           />
         </Tilt>
