@@ -107,6 +107,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home setEmail={setEmail} />} />
       <Route path="/rank" element={<Rank user={user} />} />
+      <Route path="*" element={<Home setEmail={setEmail} />} />
     </Routes>
   );
 }
