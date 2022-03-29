@@ -13,49 +13,52 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[33%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
-          <p className="text-3xl p-6 opacity-90">Secure Transections</p>
-          <p className="text-lg text-left w-[22ch] px-6 ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
+          className="lg:w-[33%]  m-auto  lg:mx-5 max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-5 ">
+          <p className="text-3xl lg:text-4xl  py-2 px-4 lg:p-6 ">Secure Transections</p>
+          <p className="w-[22ch] text-lg text-left lg:w-[26ch] lg:text-xl  px-5 ">
+            Take control of your assets by setting up a security layer over each protocol you interact with. Easily recover your wallet.
           </p>
           <img
             src={bitcoin}
-            className="w-28 lg:w-32 absolute right-3 bottom-3"
+            className="w-28  lg:w-40 absolute right-3 bottom-0 float-right"
             alt=""
           />
         </Tilt>
-
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[33%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
-          <p className="text-3xl p-6 opacity-90">Credibilty in in-game tokens and NFTs</p>
-          <p className="text-lg text-left w-[22ch] px-6 ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
+          className="lg:w-[33%]  m-auto  lg:mx-5 max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-5 ">
+          <p className="text-2xl lg:text-4xl  py-2 px-4 lg:p-6 ">Credibilty in in-game tokens and NFTs
+          </p>
+          <p className="w-[22ch] text-lg text-left lg:w-[26ch] lg:text-xl  px-5 ">
+
+            Convert in-game assets to NFTs and vice versa. Trade only credible assets with Komet safety score.
           </p>
           <img
             src={goal}
-            className="w-28  absolute right-3 bottom-3"
+            className="w-28  lg:w-36 absolute right-3 bottom-3 float-right"
             alt=""
           />
         </Tilt>
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="Tilt lg:w-[33%] w-[95%] m-auto opacity-80 hover:opacity-100 lg:mx-5 max-w-lg card rounded-xl relative  min-h-[300px] my-4  ">
-          <p className="text-3xl p-6 opacity-90">Easy access to the future</p>
-          <p className="text-xl text-left w-[22ch] px-6 ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. .
-          </p>
+          className="lg:w-[33%]  m-auto  lg:mx-5 max-w-lg card rounded-xl relative  min-h-[350px] my-4 py-5 ">
+          <p className="text-3xl lg:text-4xl pb-2 px-4 lg:p-6 ">Easy access to the future</p>
+          <p className=" text-lg w-[23ch] text-left lg:w-[26ch] lg:text-xl  px-5 ">
+            Be the first one to access simplified multi-chain experience from the interoperable gaming universe . Earn, invest and save with your friends.          </p>
           <img
             src={future}
-            className="w-28  absolute right-3 bottom-3"
+            className="w-24  lg:w-36 absolute right-3 bottom-0 float-right"
             alt=""
           />
         </Tilt>
 
 
-                <div className="select-none z-0 xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  hidden lg:-left-36 -bottom-28 absolute bg-[#8146FF]/50 rounded-full"></div>
+
+
+
+        <div className="select-none z-0 xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  hidden lg:-left-36 -bottom-28 absolute bg-[#8146FF]/50 rounded-full"></div>
       </div>
     </>
   );
