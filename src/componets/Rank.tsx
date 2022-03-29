@@ -3,6 +3,7 @@ import future from "/future.svg";
 import { db } from "../firebase";
 import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { useParams } from "react-router-dom";
 
 
 
@@ -15,13 +16,15 @@ interface Props {
   user: any;
 }
 
-export const Rank = ({ user }: Props) => {
+export const Rank = () => {
+  let { id } = useParams()
   const height = window.innerHeight;
   const width = window.innerWidth;
   let navigate = useNavigate();
   const [rank, setRank] = useState(0);
   const [reflink, setrefLink] = useState("");
   const [isCopied, setisCopied] = useState(false);
+  let user: any;
 
 
   useEffect(() => {
@@ -29,6 +32,13 @@ export const Rank = ({ user }: Props) => {
       async () => {
         let sortedArray: any = []
         const sortedUser = collection(db, 'users');
+
+        console.log(id)
+        if (id) {
+          const userexistref = query(sortedUser, where("email", "==", id));
+          const existeduserData = (await getDocs(userexistref)).docs[0].data()
+          user = existeduserData;
+        }
         const q = query(sortedUser, orderBy("points", "desc"));
         const sortedUsers = (await getDocs(q)).docs;
         sortedUsers.forEach((doc) => {
@@ -62,21 +72,20 @@ export const Rank = ({ user }: Props) => {
         height={height}
         onConfettiComplete={() => null}
       />
-      {/* <p className="font-normal text-3xl p-4 cursor-pointer text-white" onClick={() => navigate('/')}>X</p> */}
-      <AiOutlineCloseCircle style={{
-        color: "white",
-        fontSize: 40,
-        position: "absolute",
-        top: 20,
-        left: 20,
-        cursor: "pointer"
-      }}
-        onClick={() => navigate('/')}
-      />
-      <div className=" text-white overflow-hidden relative  flex justify-center border h-screen  flex-col items-center">
 
+      <div className=" text-white overflow-hidden relative  flex justify-center  h-screen  flex-col items-center">
+        <AiOutlineCloseCircle style={{
+          color: "white",
+          fontSize: 50,
+          position: "absolute",
+          top: 20,
+          left: 20,
+          cursor: "pointer",
+          fontWeight: 100,
 
-
+        }}
+          onClick={() => navigate('/')}
+        />
         <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-top-20 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
         <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
 
