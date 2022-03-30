@@ -9,11 +9,11 @@ export const TiltCards = () => {
       <p className="px-5  text-center max-w-[35ch] text-4xl bold  sm:text-7xl lg:py-10 font-bold m-auto mb-10 ">
         Unlocking your digital world
       </p>
-      <div className="w-[90%] m-auto lg:w-ful lg:flex  mb-32 justify-between">
+      <div className="w-[90%] m-auto lg:w-ful lg:flex  mb-32 justify-between  relative">
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[32%]  card-border flex flex-col items-center p-6 text-center border-[4px]  rounded-2xl ">
+          className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center border-[4px]  rounded-2xl ">
           <img
             src={bitcoin}
             className="w-[30%] mb-2"
@@ -28,7 +28,7 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[32%]  card-border flex flex-col items-center p-6 text-center my-8 lg:my-0  border-[4px]" >
+          className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center my-8 lg:my-0  border-[4px]" >
           <img
             src={goal}
             className="w-[30%] my-2"
@@ -43,7 +43,7 @@ export const TiltCards = () => {
         <Tilt
           tiltEnable={true}
           tiltReverse={true}
-          className="lg:w-[32%]  card-border flex flex-col items-center p-6 text-center border-[4px]">
+          className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center border-[4px]">
           <img
             src={future}
             className="w-[30%] mb-2"
@@ -58,7 +58,7 @@ export const TiltCards = () => {
 
 
 
-        <div className="select-none z-0 xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  hidden lg:-left-36 -bottom-28 absolute bg-[#8146FF]/50 rounded-full"></div>
+        <div className="select-none z-0 xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  hidden lg:-left-36 -bottom-32 absolute bg-[#8146FF]/50 rounded-full"></div>
       </div>
     </>
   );

@@ -5,7 +5,7 @@ import logo from "/log.svg"
 export const Navbar = () => {
     return (
         <>
-            <div className="select-none z-0 xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  top-12 left-0 lg:-left-16 lg:top-22 absolute bg-[#8146FF]/50 rounded-full"></div>
+            <div className="select-none z-0 xl:block blur-2xl lg:w-40 w-16 h-16 lg:h-40  top-28 left-0 lg:-left-16 lg:top-22 absolute bg-[#8146FF]/50 rounded-full"></div>
             <nav className="flex relative  z-10 justify-between items-center px-8 py-3 mb-10 ">
                 <img src={logo} className="w-20" alt="" />
                 <div className="hidden sm:flex items-center ">
