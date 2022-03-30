@@ -21,7 +21,7 @@ export const TiltCards = () => {
           </p>
           <img
             src={bitcoin}
-            className="w-28 lg:w-32 xl:w-44 absolute bottom-0 right-2"
+            className="w-[30%] absolute bottom-0 right-2"
             alt=""
           />
         </Tilt>
@@ -36,7 +36,7 @@ export const TiltCards = () => {
           </p>
           <img
             src={goal}
-            className="w-28 lg:w-32  xl:w-44  absolute bottom-4 right-2"
+            className="w-[30%] absolute bottom-4 right-2"
             alt=""
           />
         </Tilt>
@@ -52,7 +52,7 @@ export const TiltCards = () => {
           <p className="text-lg lg:w-[25ch] w-[20ch] my-2">Earn, invest and save with your friends.</p>
           <img
             src={future}
-            className="w-28 lg:w-32 xl:w-44 absolute bottom-0 right-2"
+            className="w-[30%] absolute bottom-0 right-2"
             alt=""
           />
         </Tilt>
