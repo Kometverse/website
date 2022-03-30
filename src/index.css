@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
   line-height: 1;
   overflow-x: hidden;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 * {
@@ -25,13 +25,12 @@ button:focus {
 
 .top-btns:hover {
   transform: scale(1.1, 1.1);
-
 }
 
 .intro-gradient {
   background: linear-gradient(89.93deg, #8146ff 2.54%, #290b68 97.4%);
   backdrop-filter: blur(100px);
-} 
+}
 
 nav {
   box-shadow: 0px 1px 9px rgba(255, 255, 255, 0.1);
@@ -40,7 +39,6 @@ nav {
 .cta {
   background: linear-gradient(80deg, #290b68 0%, #8146ff 100%);
 }
-
 
 .web3-text {
   background-image: linear-gradient(
@@ -72,4 +70,15 @@ button:focus {
   );
   background-clip: text;
   color: transparent;
-} 
+}
+
+.card-border {
+  border-image-slice: 1;
+  border-radius: 40px;
+  border-image-source: linear-gradient(
+    rgba(113, 20, 209, 1),
+    rgba(106, 24, 192, 1),
+    rgba(255, 132, 243, 1),
+    rgba(223, 6, 202, 0.47)
+  );
+}
