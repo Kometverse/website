@@ -32,13 +32,11 @@ interface Props {
 const Home = ({ setEmail }: Props) => {
   return (
     <>
-      <div className="text-white relative w-full min-h-screen bg-primary ">
+      <div className="text-white relative w-full min-h-screen border bg-primary ">
         <Navbar />
-        <div className="xl:w-[90%] m-auto ">
-          <Hero />
-          <Intro />
-          <TiltCards />
-        </div>
+        <Hero />
+        <Intro />
+        <TiltCards />
         <CTA setEmail={setEmail} />
         <Footer />
       </div >
@@ -106,7 +104,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home setEmail={setEmail} />} />
-      <Route path="/rank" element={<Rank user={user} />} />
+      <Route path="rank" element={<Rank user={user} />} />
       <Route path="*" element={<Home setEmail={setEmail} />} />
     </Routes>
   );
