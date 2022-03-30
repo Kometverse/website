@@ -32,7 +32,7 @@ interface Props {
 const Home = ({ setEmail }: Props) => {
   return (
     <>
-      <div className="text-white relative w-full min-h-screen border bg-primary ">
+      <div className="text-white relative w-full min-h-screen bg-primary ">
         <Navbar />
         <Hero />
         <Intro />
