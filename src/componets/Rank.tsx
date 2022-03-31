@@ -42,7 +42,7 @@ export const Rank = ({ user }: Props) => {
         console.log(sortedArray)
         sortedArray.forEach((item: any) => {
           if (item.refID === user.refID) {
-            console.log("found it ")
+            console.log("found it damn ")
             setRank(sortedArray.indexOf(item) + 500)
           }
         });
