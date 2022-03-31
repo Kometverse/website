@@ -16,8 +16,8 @@ export const Intro = () => {
                     <p className="sm:text-2xl  text-lg max-w-[40ch] lg:max-w-[25ch]  mb-8 text-center lg:text-left">  Simplified web3 infrastructure for games & NFTs</p>
                 </div>
                 <div className="lg:hidden flex w-[80%] m-auto lg:absolute  flex-wrap items-center  justify-center ">
-                    <NftImage img={game4} />
                     <NftImage img={game2} />
+                    <NftImage img={game1} />
                     <NftImage img={game3} />
                     <NftImage img={game4} />
                     <NftImage img={game5} />
