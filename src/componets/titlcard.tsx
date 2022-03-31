@@ -34,7 +34,7 @@ export const TiltCards = () => {
             className="w-[30%] my-2"
             alt=""
           />
-          <p className="text-2xl lg:text-3xl ">Credibilty in in-game tokens and NFTs</p>
+          <p className="text-2xl lg:text-3xl ">Credible in-game assets and NFTs</p>
           <p className="lg:text-lg text-sm my-2 ">
             Convert in-game assets to NFTs and vice versa. Trade only credible assets with Komet safety score.
           </p>
@@ -49,7 +49,7 @@ export const TiltCards = () => {
             className="w-[30%] mb-2"
             alt=""
           />
-          <p className="text-2xl lg:text-3xl ">Easy access to the future</p>
+          <p className="text-2xl lg:text-3xl ">Instant access to future</p>
           <p className="lg:text-lg text-sm my-2 ">
             Be the first one to access simplified multi-chain experience from the interoperable gaming universe . Earn, invest and save with your friends.
           </p>

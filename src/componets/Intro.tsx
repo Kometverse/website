@@ -13,11 +13,11 @@ export const Intro = () => {
                 <div className="select-none xl:block blur-2xl lg:w-44 w-16 h-16 lg:h-44  hidden -top-20 lg:-right-32 absolute bg-[#8146FF]/50 rounded-full"></div>
                 <div className="flex flex-col items-center text-center lg:items-start px-4  lg:ml-6">
                     <h1 className="max-w-[20ch] sm:text-6xl mb-5 text-4xl leading font-bold  text-center leading-relaxed lg:text-left lg:text-5xl lg:w-[15ch] xl:text-6xl line ">Unlocking your digital world</h1>
-                    <p className="sm:text-2xl  text-lg max-w-[40ch] lg:max-w-[25ch]  mb-8 text-center lg:text-left">A simplified wallet infrastructure for web3 games and NFTs</p>
+                    <p className="sm:text-2xl  text-lg max-w-[40ch] lg:max-w-[25ch]  mb-8 text-center lg:text-left">  Simplified web3 infrastructure for games & NFTs</p>
                 </div>
                 <div className="lg:hidden flex w-[80%] m-auto lg:absolute  flex-wrap items-center  justify-center ">
+                    <NftImage img={game4} />
                     <NftImage img={game2} />
-                    <NftImage img={game1} />
                     <NftImage img={game3} />
                     <NftImage img={game4} />
                     <NftImage img={game5} />

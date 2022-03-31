@@ -1,6 +1,6 @@
 import ast from "/ast.svg";
 import future from "/future.svg";
-import bitcoin from "/bitcoin.svg"
+
 import { db } from "../firebase";
 import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 import { AiOutlineCloseCircle } from "react-icons/ai";
@@ -28,6 +28,7 @@ export const Rank = ({ user }: Props) => {
   useEffect(() => {
     (
       async () => {
+        const usersref = collection(db, "users");
         let sortedArray: any = []
         const sortedUser = collection(db, 'users');
         const q = query(sortedUser, orderBy("points", "desc"));
@@ -51,7 +52,7 @@ export const Rank = ({ user }: Props) => {
 
     // console.log(user.points);
     setrefLink("?refID=" + user.refID);
-  });
+  }, []);
 
   return (
     <>
