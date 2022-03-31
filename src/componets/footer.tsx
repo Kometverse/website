@@ -11,14 +11,14 @@ export const Footer = () => {
                 <p className="text-[12px]">Made with <i className="text-red-500">❤️</i> from india for global  </p>
                 <div className="flex items-center">
                     <a href="https://discord.gg/zSgSEGjh2n" target="_blank">
-                        <img className="w-4 lg:w-7" src={discord} alt="" />
+                        <img className="w-4 lg:w-7" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/discord.svg?alt=media&token=45a1f48f-1c7d-410d-a114-b408182b98cc" alt="" />
                     </a>
                     <a href="https://twitter.com/kometverse" target="_blank" >
-                        <img src={twitter} alt="" className="w-4 ml-4 lg:w-7" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/twitter.svg?alt=media&token=83cfaa21-c7bc-455a-9276-d8ec6bc6b33f" alt="" className="w-4 ml-4 lg:w-7" />
                     </a>
 
                     <a href="https://komet.substack.com/subscribe?utm_source=test&utm_medium=email&utm_source=subscribe-widget&utm_content=51176836" target="_blank" >
-                        <img src={mail} alt="" className="w-4 ml-4 lg:w-7" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/mail.svg?alt=media&token=f7c87d34-6909-456c-9238-4ce914b51da7" alt="" className="w-4 ml-4 lg:w-7" />
                     </a>
 
                 </div>

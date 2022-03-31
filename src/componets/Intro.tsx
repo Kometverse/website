@@ -1,10 +1,5 @@
 import { NftImage } from "./NFTimg"
-import game1 from "/game1.svg"
-import game2 from "/game2.svg"
-import game3 from "/game3.svg"
-import game4 from "/game4.svg"
-import game5 from "/game5.svg"
-import game6 from "/game6.svg"
+
 export const Intro = () => {
     return (
         <>
@@ -16,20 +11,20 @@ export const Intro = () => {
                     <p className="sm:text-2xl  text-lg max-w-[40ch] lg:max-w-[25ch]  mb-8 text-center lg:text-left">A simplified wallet infrastructure for web3 games and NFTs</p>
                 </div>
                 <div className="lg:hidden flex w-[80%] m-auto lg:absolute  flex-wrap items-center  justify-center ">
-                    <NftImage img={game2} />
-                    <NftImage img={game1} />
-                    <NftImage img={game3} />
-                    <NftImage img={game4} />
-                    <NftImage img={game5} />
-                    <NftImage img={game6} />
+                    <NftImage img="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game2.svg?alt=media&token=49abd78d-d3a7-4062-b8cf-878c727a3e54" />
+                    <NftImage img="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game1.svg?alt=media&token=27e0919d-eb39-4e4e-ad7e-5ddeaf7a0922" />
+                    <NftImage img="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game3.svg?alt=media&token=9f2a9138-e1aa-42c9-a3aa-227bcc597f62" />
+                    <NftImage img="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game4.svg?alt=media&token=4b0a3573-118e-4044-9458-5d874cec518a" />
+                    <NftImage img="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game5.svg?alt=media&token=10365504-e771-4b32-91ed-04f18add8e80" />
+                    <NftImage img="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game6.svg?alt=media&token=63b2a09e-f991-4423-bad6-ba2640e6dcc3" />
                 </div>
 
                 <div className="hidden lg:block">
-                    <img className="w-[40%]  max-w-[100px] absolute -top-20 right-12  sm:max-w-[200px] rounded-full sm:mx-5 mx-3  my-4" src={game2} alt="" />
-                    <img className="w-[40%]  max-w-[100px] absolute bottom-0 right-16  sm:max-w-[150px]  rounded-full sm:mx-5 mx-3  my-4" src={game6} alt="" />
-                    <img className="w-[40%]  max-w-[100px] absolute  -right-[60px] top-20 sm:max-w-[130px]  rounded-full sm:mx-5 mx-3  my-4" src={game1} alt="" />
-                    <img className="w-[40%]  max-w-[100px] absolute -bottom-10 -right-8 sm:max-w-[100px]  rounded-full  sm:ml-7 mx-3  my-4" src={game3} alt="" />
-                    <img className="w-[40%]  max-w-[100px] absolute  right-[200px] top-20 sm:max-w-[150px] lg:w-[190px] rounded-full sm:mx-5 mx-3  my-4" src={game5} alt="" />
+                    <img className="w-[40%]  max-w-[100px] absolute -top-20 right-12  sm:max-w-[200px] rounded-full sm:mx-5 mx-3  my-4" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game4.svg?alt=media&token=4b0a3573-118e-4044-9458-5d874cec518a" alt="" />
+                    <img className="w-[40%]  max-w-[100px] absolute bottom-0 right-16  sm:max-w-[150px]  rounded-full sm:mx-5 mx-3  my-4" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game6.svg?alt=media&token=63b2a09e-f991-4423-bad6-ba2640e6dcc3" alt="" />
+                    <img className="w-[40%]  max-w-[100px] absolute  -right-[60px] top-20 sm:max-w-[130px]  rounded-full sm:mx-5 mx-3  my-4" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game1.svg?alt=media&token=27e0919d-eb39-4e4e-ad7e-5ddeaf7a0922" alt="" />
+                    <img className="w-[40%]  max-w-[100px] absolute -bottom-10 -right-8 sm:max-w-[100px]  rounded-full  sm:ml-7 mx-3  my-4" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game3.svg?alt=media&token=9f2a9138-e1aa-42c9-a3aa-227bcc597f62" alt="" />
+                    <img className="w-[40%]  max-w-[100px] absolute  right-[200px] top-20 sm:max-w-[150px] lg:w-[190px] rounded-full sm:mx-5 mx-3  my-4" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game5.svg?alt=media&token=10365504-e771-4b32-91ed-04f18add8e80" alt="" />
                 </div>
             </div>
 

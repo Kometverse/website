@@ -86,9 +86,9 @@ export const Rank = ({ user }: Props) => {
         <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-top-20 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
         <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
 
-        <img src={ast} className="w-44 h-44 lg:w-48" alt="" />
+        <img src=" https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/ast.svg?alt=media&token=90091eca-e96f-432b-a32a-add5e6f542e3" className="w-44 h-44 lg:w-48" alt="" />
         <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
-          That's Cool <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/ast.svg?alt=media&token=90091eca-e96f-432b-a32a-add5e6f542e3" className=" mx-2 w-6" alt="" />
+          That's Cool <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/future.svg?alt=media&token=e76969bc-bb28-4085-abad-6fa4eefc65b9" className=" mx-2 w-6" alt="" />
         </h2>
         <p className="rankjoin font-bold text-xl">
           Thanks for joining the waitlist!

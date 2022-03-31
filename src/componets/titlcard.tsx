@@ -15,7 +15,7 @@ export const TiltCards = () => {
           tiltReverse={true}
           className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center border-[4px]  rounded-2xl ">
           <img
-            src={bitcoin}
+            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/bitcoin.svg?alt=media&token=75986972-68ae-4b23-b8b1-1ab1e62fc188"
             className="w-[30%] mb-2"
             alt=""
           />
@@ -30,7 +30,7 @@ export const TiltCards = () => {
           tiltReverse={true}
           className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center my-8 lg:my-0  border-[4px]" >
           <img
-            src={goal}
+            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/gals.svg?alt=media&token=4344d77f-61a1-41ea-8318-43777288cfef"
             className="w-[30%] my-2"
             alt=""
           />
@@ -45,7 +45,7 @@ export const TiltCards = () => {
           tiltReverse={true}
           className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center border-[4px]">
           <img
-            src={future}
+            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/future.svg?alt=media&token=e76969bc-bb28-4085-abad-6fa4eefc65b9"
             className="w-[30%] mb-2"
             alt=""
           />
