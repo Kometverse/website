@@ -88,7 +88,7 @@ export const Rank = ({ user }: Props) => {
 
         <img src={ast} className="w-44 h-44 lg:w-48" alt="" />
         <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
-          That's Cool <img src={future} className=" mx-2 w-6" alt="" />
+          That's Cool <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/ast.svg?alt=media&token=90091eca-e96f-432b-a32a-add5e6f542e3" className=" mx-2 w-6" alt="" />
         </h2>
         <p className="rankjoin font-bold text-xl">
           Thanks for joining the waitlist!
