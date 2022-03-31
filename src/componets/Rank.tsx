@@ -56,7 +56,7 @@ export const Rank = ({ user }: Props) => {
 
     // console.log(user.points);
     setrefLink("?refID=" + user.refID);
-  }, []);
+  });
 
   return (
     <>
