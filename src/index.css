@@ -18,10 +18,6 @@ html {
 button:focus {
   outline: none;
 }
-.icon:hover {
-  transition: 0.9s;
-  transform: rotateY(180deg);
-}
 
 .top-btns:hover {
   transform: scale(1.1, 1.1);
