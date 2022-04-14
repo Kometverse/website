@@ -29,10 +29,9 @@ export const Rank = ({ user }: Props) => {
   useEffect(() => {
     (
       async () => {
-        const usersref = collection(db, "users");
         let sortedArray: any = []
         const sortedUser = collection(db, 'users');
-        const q = query(sortedUser, orderBy("points", "desc"));
+        const q = query(sortedUser, orderBy("points", "desc"), orderBy("created_at", "desc"));
         const sortedUsers = (await getDocs(q)).docs;
         sortedUsers.forEach((doc) => {
           // console.log(doc)

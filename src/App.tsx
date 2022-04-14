@@ -15,6 +15,7 @@ import {
   addDoc,
   query,
   where,
+  Timestamp,
 } from "firebase/firestore";
 import { db } from "./firebase";
 import { TiltCards } from "./componets/titlcard";
@@ -57,6 +58,7 @@ function App() {
       email: email,
       points: 0,
       refID: newrefID,
+      created_at: Timestamp.now().nanoseconds
     };
     await addDoc(useresref, newuserData);
     // get user from db
