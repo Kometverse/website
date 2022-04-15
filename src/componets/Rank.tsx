@@ -1,66 +1,60 @@
-import ast from "/ast.svg";
-
-import future from "/future.svg";
-
 import { db } from "../firebase";
 import { collection, getDocs, query, where, orderBy } from "firebase/firestore";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-
-
-
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { RWebShare } from "react-web-share";
 import Confetti from 'react-confetti'
+import { useSearchParams } from "react-router-dom";
 
-interface Props {
-  user: any;
-}
-
-export const Rank = ({ user }: Props) => {
+export const Rank = () => {
   const height = window.innerHeight;
   const width = window.innerWidth;
+  const [searchParams, setSearchParams] = useSearchParams();
+  const email = searchParams.get("email")
+
   let navigate = useNavigate();
   const [rank, setRank] = useState(0);
   const [reflink, setrefLink] = useState("");
   const [isCopied, setisCopied] = useState(false);
-
+  let newuser: any = null;
+  let myurl: any = null;
 
   useEffect(() => {
     (
       async () => {
-        let sortedArray: any = []
+        // console.log(email)
+        const sortedArray: any = []
         const sortedUser = collection(db, 'users');
-        const q = query(sortedUser, orderBy("points", "desc"), orderBy("created_at", "desc"));
+        const q = query(sortedUser, orderBy("points", "desc"), orderBy("created_at", "asc"));
+
         const sortedUsers = (await getDocs(q)).docs;
         sortedUsers.forEach((doc) => {
-          // console.log(doc)
           sortedArray.push({ ...doc.data(), id: doc.id })
         })
+        // console.log(sortedArray)
+        const userQuery = query(sortedUser, where('email', '==', email));
+        newuser = (await getDocs(userQuery)).docs[0].data();
 
-        sortedArray = Array.from(sortedArray);
-        console.log(sortedArray)
-        sortedArray.forEach((item: any) => {
-          console.log("hi")
-          console.log(user.refID)
-          console.log(item.refID)
-          if (user.refID === item.refID) {
-            console.log("found it damn ")
-            setRank(sortedArray.indexOf(item) + 500)
-          }
-        });
+        myurl = `${window.location.protocol}//${window.location.host}/?refID=${newuser ? newuser.refID : ""}`;
+        setrefLink(myurl)
+
+        if (newuser) {
+          sortedArray.forEach((item: any) => {
+            if (newuser.refID === item.refID) {
+              // console.log("found it damn ")
+              setRank(sortedArray.indexOf(item) + 500)
+            }
+          });
+        } else {
+          // console.log(" user not found ")
+        }
       }
-
-
     )()
-
-    // console.log(user.points);
-    setrefLink("?refID=" + user.refID);
-  });
+  }, [email])
 
   return (
     <>
-
       <Confetti
         numberOfPieces={20}
         tweenDuration={20}
@@ -102,11 +96,13 @@ export const Rank = ({ user }: Props) => {
         </p>
         <div className="flex justify-between  w-[90%] text-sm max-w-md ">
           <RWebShare
-            data={{
-              text: "",
-              url: `${window.location.protocol}//${window.location.host}/?refID=${user.refID}`,
-              title: "Invite freinds",
-            }}
+            data={
+              {
+                title: myurl,
+                url: reflink,
+                text: myurl,
+              }
+            }
 
             onClick={() => setisCopied(true)}
           >
