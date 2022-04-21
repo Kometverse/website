@@ -43,7 +43,7 @@ export const Rank = () => {
           sortedArray.forEach((item: any) => {
             if (newuser.refID === item.refID) {
               // console.log("found it damn ")
-              setRank(sortedArray.indexOf(item) + 500)
+              setRank(sortedArray.indexOf(item) + 1500)
             }
           });
         } else {
