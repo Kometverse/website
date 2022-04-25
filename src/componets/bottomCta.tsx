@@ -30,7 +30,7 @@ export const CTA = () => {
 
   return (
     <>
-      <div className='h-screen flex items-center justify-center sticky bottom-[0px] cta-con  bg-primary'>
+      <div className='min-h-[50vh] flex items-center justify-center sticky bottom-[0px] cta-con  bg-primary'>
         <div className='w-full  cta lg:pt-20  lg:pb-32 py-16 lg:py-32 flex flex-col items-center mt-12'>
           <h1 className='text-3xl sm:text-5xl font-bold mb-10 lg:text-7xl '>Claim Early Access</h1>
           <form className=' w-full m-auto ' onSubmit={(e) => {

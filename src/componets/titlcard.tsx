@@ -2,7 +2,7 @@
 export const TiltCards = () => {
   return (
     <>
-      <div className="min-h-[80vh]  flex items-center justify-center   py-28 relative z-20 bg-primary">
+      <div className="overflow-hidden min-h-[80vh]  flex items-center justify-center   py-28 relative z-20 bg-primary">
         <div>
           <div className="">
             <p className=" px-5  text-center max-w-[35ch] text-4xl bold  sm:text-7xl font-bold m-auto  ">
