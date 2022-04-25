@@ -11,15 +11,18 @@ function App() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="bg-primary w-full p-4 md:container m-auto scroll-smooth relative z-0  ">
+    <div>
       <Navbar open={open} setOpen={setOpen} />
-      <Hero />
-      <Intro />
-      <TiltCards />
-      <CTA />
-      <div id="cta"></div>
-      <Footer />
-    </div >
+      <div className="bg-primary w-full p-4 md:container m-auto scroll-smooth relative z-0  ">
+        <Hero />
+        <Intro />
+        <TiltCards />
+        <CTA />
+        <div id="cta"></div>
+        <Footer />
+      </div >
+
+    </div>
   );
 }
 

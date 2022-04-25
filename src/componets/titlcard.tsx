@@ -83,6 +83,7 @@ export const TiltCards = () => {
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
+              data-aos-anchor-placement="top-center"
               className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center my-8 lg:my-0  border-[4px] lg:h-[500px] " >
               <div className="h-[50%] flex justify-center">
                 <img
