@@ -1,13 +1,35 @@
 import { NftImage } from "./NFTimg"
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 export const Intro = () => {
+    useEffect(() => {
+        Aos.init();
+        Aos.refresh();
+    }, []);
+
     return (
         <>
 
-            <div className="lg:h-screen flex items-center bg-primary ">
-                <div className="intro-gradient  w-full m-auto rounded-3xl lg:flex items-center relative lg:h-[400px]">
-                    <div className="flex flex-col items-center text-center lg:items-start px-4  lg:ml-6">
-                        <h1 className="max-w-[20ch] sm:text-6xl mb-5 text-4xl leading font-bold  text-center leading-relaxed lg:text-left lg:text-5xl lg:w-[15ch] xl:text-6xl line ">Unlocking your digital world</h1>
-                        <p className="sm:text-2xl  text-lg max-w-[40ch] lg:max-w-[25ch]  mb-8 text-center lg:text-left">A simplified wallet  for web3 games and NFTs</p>
+            <div className="lg:h-[80vh] flex items-center bg-primary ">
+                <div data-aos="fade-up" className="intro-gradient  w-full m-auto rounded-3xl lg:flex items-center relative lg:h-[400px]">
+                    <div className=" flex flex-col items-center text-center lg:items-start px-4  lg:ml-6">
+                        <h1 data-aos="fade-up"
+                            data-aos-offset="100"
+                            data-aos-delay="10"
+                            data-aos-duration="500"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                            className="max-w-[20ch] sm:text-6xl mb-5 text-4xl leading font-bold  text-center leading-relaxed lg:text-left lg:text-5xl lg:w-[15ch] xl:text-6xl line ">Unlocking your digital world</h1>
+                        <p data-aos="fade-right"
+                            // data-aos-offset="100"
+                            data-aos-delay="10"
+                            data-aos-duration="500"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                            className="sm:text-2xl  text-lg max-w-[40ch] lg:max-w-[25ch]  mb-8 text-center lg:text-left">A simplified wallet  for web3 games and NFTs</p>
                     </div>
                     <div className="lg:hidden flex w-[80%] m-auto flex-wrap items-center  justify-center ">
                         <NftImage img="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game2.svg?alt=media&token=49abd78d-d3a7-4062-b8cf-878c727a3e54" />

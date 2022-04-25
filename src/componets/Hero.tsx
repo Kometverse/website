@@ -13,7 +13,7 @@ export const Hero = () => {
                         Join Waitlist
                     </a>
                 </div>
-                <div className="scroll-downs self-center mt-10">
+                <div className="animate-bounce  scroll-downs self-center mt-10">
                     <div className="mousey">
                         <div className="scroller"></div>
                     </div>

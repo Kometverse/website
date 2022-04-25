@@ -8,12 +8,25 @@ export const TiltCards = () => {
             <p className=" px-5  text-center max-w-[35ch] text-4xl bold  sm:text-7xl font-bold m-auto  ">
               Unlocking your digital world
             </p>
-            <div className="w-[50%] h-2 cta m-auto mt-10">
+            <div data-aos="fade-right"
+              data-aos-offset="100"
+              data-aos-delay="20"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false" className="w-[50%] h-2 cta m-auto mt-10">
 
             </div>
           </div>
           <div className="w-[90%] my-24 m-auto lg:w-[80%] lg:flex justify-between items-center  relative">
             <div
+              data-aos="fade-right"
+              data-aos-offset="100"
+              data-aos-delay="13"
+              data-aos-duration="400"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
               className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center my-8 lg:my-0  border-[4px] lg:h-[500px] " >
               <div className="h-[50%] flex justify-center">
                 <img
@@ -31,6 +44,13 @@ export const TiltCards = () => {
               </div>
             </div>
             <div
+              data-aos="fade-down"
+              data-aos-offset="100"
+              data-aos-delay="10"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
               className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center my-8 lg:my-0  border-[4px] lg:h-[550px] " >
               <div className="h-[50%] flex justify-center">
                 <img
@@ -48,6 +68,13 @@ export const TiltCards = () => {
               </div>
             </div>
             <div
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-delay="13"
+              data-aos-duration="400"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
               className="lg:w-[32%]  card-border flex flex-col items-center justify-center p-6 text-center my-8 lg:my-0  border-[4px] lg:h-[500px] " >
               <div className="h-[50%] flex justify-center">
                 <img
