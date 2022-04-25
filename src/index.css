@@ -9,18 +9,63 @@ html {
   line-height: 1;
   overflow-x: hidden;
   font-family: "Space Grotesk", sans-serif;
+  color: white;
 }
 
-* {
-  font-family: inherit;
+.fadePopInAndStay {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  animation-name: doAnimStay;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards; /* Makes it stay after animation */
+}
+@keyframes doAnimStay {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 
-button:focus {
-  outline: none;
+.scroll-downs {
+  width: 34px;
+  height: 55px;
 }
-
-.top-btns:hover {
-  transform: scale(1.1, 1.1);
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #8146ff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
 .intro-gradient {
@@ -28,12 +73,23 @@ button:focus {
   backdrop-filter: blur(100px);
 }
 
-nav {
-  box-shadow: 0px 1px 9px rgba(255, 255, 255, 0.1);
+.card-border {
+  border-image-slice: 1;
+  border-radius: 40px;
+  border-image-source: linear-gradient(
+    rgba(113, 20, 209, 1),
+    rgba(106, 24, 192, 1),
+    rgba(255, 132, 243, 1),
+    rgba(223, 6, 202, 0.47)
+  );
 }
 
 .cta {
   background: linear-gradient(80deg, #290b68 0%, #8146ff 100%);
+}
+
+.cta-con {
+  z-index: -1;
 }
 
 .web3-text {
@@ -51,14 +107,6 @@ input:focus {
   outline: none;
 }
 
-button:focus {
-  outline: none;
-}
-
-.card {
-  background: linear-gradient(90deg, #290b68 0%, #8146ff 100%);
-}
-
 .rankjoin {
   background-image: linear-gradient(
     rgba(255, 168, 89, 1),
@@ -68,13 +116,21 @@ button:focus {
   color: transparent;
 }
 
-.card-border {
-  border-image-slice: 1;
-  border-radius: 40px;
-  border-image-source: linear-gradient(
-    rgba(113, 20, 209, 1),
-    rgba(106, 24, 192, 1),
-    rgba(255, 132, 243, 1),
-    rgba(223, 6, 202, 0.47)
+.cta-btn {
+  background: linear-gradient(rgba(35, 10, 90, 1), rgba(35, 10, 90, 0.8));
+}
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+.web3-text {
+  background-image: linear-gradient(
+    rgba(129, 70, 255, 1),
+    rgba(69, 61, 159, 1)
   );
+  background-clip: text;
+  color: transparent;
 }

@@ -7,13 +7,16 @@ import { Navbar } from "./componets/Navbar";
 import { TiltCards } from "./componets/titlcard";
 
 function App() {
+
+  const [open, setOpen] = useState(false)
   return (
-    <div className="text-white relative w-full min-h-screen bg-primary ">
-      <Navbar />
+    <div className="bg-primary w-full p-4 md:container m-auto scroll-smooth relative z-0 ">
+      <Navbar open={open} setOpen={setOpen} />
       <Hero />
       <Intro />
       <TiltCards />
       <CTA />
+      <div id="cta"></div>
       <Footer />
     </div >
   );
