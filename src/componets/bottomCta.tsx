@@ -25,7 +25,7 @@ export const CTA = () => {
   return (
     <>
       <div className="lg:min-h-[80vh] w-full  lg:w-[90%] m-auto flex items-center   cta-con sticky bottom-0 justify-center   bg-primary">
-        <div className="cta w-full flex flex-col items-center py-14 lg:py-28">
+        <div className="cta w-full flex flex-col items-center py-14 lg:py-28 rounded-xl">
           <h1 className="text-3xl sm:text-5xl font-bold mb-10 lg:text-7xl ">
             Claim Early Access
           </h1>

@@ -31,7 +31,7 @@ export const Navbar = ({ open, setOpen }: Props) => {
             <div className=" sticky top-0 z-40 bg-primary">
                 <nav className="container m-auto flex justify-between items-center  p-4">
                     <img
-                        src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e"
+                        src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/komet.svg?alt=media&token=52edf4d2-e2a1-4205-87d4-5783f42e1196"
                         className="w-20"
                         alt=""
                     />

@@ -5,7 +5,7 @@ export const Footer = () => {
         <>
             <>
                 <div className=" m-auto mt-5 py-5 flex items-center justify-between w-[90%] text-sm  lg:text-">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e" className="lg:w-20 w-12 " alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/komet.svg?alt=media&token=52edf4d2-e2a1-4205-87d4-5783f42e1196" className="lg:w-20 w-12 " alt="" />
                     <div className="flex items-center">
                         <a href="https://discord.gg/zSgSEGjh2n" target="_blank">
                             <img className="w-4 lg:w-7" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/discord.svg?alt=media&token=45a1f48f-1c7d-410d-a114-b408182b98cc" alt="" />

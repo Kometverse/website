@@ -39,7 +39,6 @@ export const TiltCards = () => {
                     className="object-cover "
                     alt=""
                   />
-
                 </div>
                 <div>
                   <p className="text-2xl  font-bold my-2 ">Secure Transactions</p>
@@ -65,7 +64,6 @@ export const TiltCards = () => {
                     className="object-cover"
                     alt=""
                   />
-
                 </div>
                 <div>
                   <p className="text-2xl  font-bold my-2 ">Credible NFTs</p>
@@ -98,9 +96,7 @@ export const TiltCards = () => {
                   </p>
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
