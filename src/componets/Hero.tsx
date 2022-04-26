@@ -8,7 +8,7 @@ export const Hero = () => {
                         <span className="web3-text ">The <span className="text-white">easiest</span>  way</span>
                         <span className="web3-text">to access web3</span>
                     </h1>
-                    <p className="px-2 text-center lg:text-2xl my-4 lg:text-left lg:w-[60ch] ">Komet is Easy to use, secure wallet designed for all of us</p>
+                    <p className="px-2 text-center lg:text-2xl my-4 lg:text-left lg:w-[60ch] ">Komet is Easy to use, secure crypto and NFT wallet designed for all of us</p>
                     <a href="#cta" className="" >
                         <button className="cta-button btn-2 my-8 cta px-6 py-2 rounded text-xl  relative"><span className="btn-span">Join waitlist</span></button>
                     </a>
