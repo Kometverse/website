@@ -1,45 +1,35 @@
 import { VscLinkExternal } from "react-icons/vsc";
 import { IoIosArrowDropdown } from "react-icons/io";
-
-
-
-
-
-
 interface Item {
     name: string;
     link: string;
 }
 
 interface Props {
-    open: boolean
-    setOpen: Function
+    open: boolean;
+    setOpen: Function;
 }
-
 
 export const Navbar = ({ open, setOpen }: Props) => {
     const hover_items = [
         {
             name: "Twitter",
-            link: "#",
+            link: "https://twitter.com/kometverse",
         },
         {
             name: "Discord",
-            link: "#",
+            link: "https://discord.gg/zSgSEGjh2n",
         },
         {
             name: "Newsletter",
-            link: "#",
+            link: "https://komet.substack.com/subscribe?utm_source=test&utm_medium=email&utm_source=subscribe-widget&utm_content=51176836",
         },
     ];
-
-
-
 
     return (
         <>
             <div className=" sticky top-0 z-40 bg-primary">
-                <nav className="container m-auto flex justify-between items-center  p-3   ">
+                <nav className="container m-auto flex justify-between items-center  p-4">
                     <img
                         src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e"
                         className="w-20"
@@ -55,7 +45,7 @@ export const Navbar = ({ open, setOpen }: Props) => {
                                 {hover_items.map((item: Item) => {
                                     return (
                                         <div className="w-full  flex items-center brightness-75 hover:brightness-100">
-                                            <a className="p-2" href={item.link}>
+                                            <a className="p-2" href={item.link} target="_blank">
                                                 {item.name}
                                             </a>
                                             <VscLinkExternal className=" w-3 hover:w-6" />
@@ -64,10 +54,12 @@ export const Navbar = ({ open, setOpen }: Props) => {
                                 })}
                             </div>
                         </div>
-                        <a className="mx-3 hidden lg:block cta px-6 py-2 rounded">join waitlist</a>
+
+                        <a href="#cta" className="" >
+                            <button className="hidden lg:block cta-button btn-2  cta px-8 py-2 rounded text-lg  relative"><span className="btn-span">Join waitlist</span></button>
+                        </a>
                     </div>
                 </nav>
-
             </div>
         </>
     );

@@ -6,8 +6,41 @@ import { useNavigate, useParams } from "react-router-dom";
 import { RWebShare } from "react-web-share";
 import Confetti from 'react-confetti'
 import { useSearchParams } from "react-router-dom";
+import { Navbar } from "./Navbar";
+import { VscLinkExternal } from "react-icons/vsc";
+import { IoIosArrowDropdown } from "react-icons/io";
+import { Footer } from "./footer";
+interface Item {
+  name: string;
+  link: string;
+}
+
+interface Props {
+  open: boolean;
+  setOpen: Function;
+}
+
+
+
+const hover_items = [
+  {
+    name: "Twitter",
+    link: "#",
+  },
+  {
+    name: "Discord",
+    link: "#",
+  },
+  {
+    name: "Newsletter",
+    link: "#",
+  },
+];
 
 export const Rank = () => {
+  const [open, setOpen] = useState(false)
+
+
   const height = window.innerHeight;
   const width = window.innerWidth;
   const [searchParams, setSearchParams] = useSearchParams();
@@ -63,21 +96,41 @@ export const Rank = () => {
         onConfettiComplete={() => null}
       />
 
-      <div className=" text-white overflow-hidden relative  flex justify-center  h-screen  flex-col items-center">
-        <AiOutlineCloseCircle style={{
-          color: "white",
-          fontSize: 50,
-          position: "absolute",
-          top: 20,
-          left: 20,
-          cursor: "pointer",
-          fontWeight: 100,
+      <div className=" sticky top-0 z-40 bg-primary">
+        <nav className="container m-auto flex justify-between items-center  p-4">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e"
+            className="w-20"
+            alt=""
+          />
+          <div className="flex">
 
-        }}
-          onClick={() => navigate('/')}
-        />
-        <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-top-20 lg:-right-20 absolute bg-[#8146FF]/50 rounded-full"></div>
-        <div className="select-none xl:block blur-2xl lg:w-48 w-16 h-16 lg:h-40  hidden lg:-bottom-20  lg:-left-20  absolute bg-[#8146FF]/50 rounded-full"></div>
+            <a href="/" className="mx-4">home</a>
+            <div className="group  relative px-4 flex flex-col justify-center">
+              <div className="flex">
+                <p className="">Community</p>
+                <IoIosArrowDropdown className="mx-2" />
+              </div>
+              <div className="hidden group-hover:flex absolute  top-4  items-center py-4  flex-col ">
+                {hover_items.map((item: Item) => {
+                  return (
+                    <div className="w-full  flex items-center brightness-75 hover:brightness-100">
+                      <a className="p-2" href={item.link}>
+                        {item.name}
+                      </a>
+                      <VscLinkExternal className=" w-3 hover:w-6" />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+
+      <div className=" text-white overflow-hidden relative  flex justify-center  h-[80vh]  flex-col items-center">
+
 
         <img src=" https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/ast.svg?alt=media&token=90091eca-e96f-432b-a32a-add5e6f542e3" className="w-44 h-44 lg:w-48" alt="" />
         <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
@@ -109,8 +162,8 @@ export const Rank = () => {
             <button className="w-full intro-gradient rounded-lg p-2 text-xl  ">Invite Friends</button>
           </RWebShare>
         </div>
-        <p className="lg:block hidden text-green-500"> {isCopied ? "link  copied" : ""}</p>
       </div>
+      <Footer />
 
     </>
   );

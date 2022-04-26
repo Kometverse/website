@@ -11,7 +11,7 @@ export const Intro = () => {
     return (
         <>
 
-            <div className="lg:h-[80vh] flex items-center bg-primary ">
+            {/* <div className="lg:h-[80vh] flex items-center bg-primary ">
                 <div data-aos="fade-up" className="intro-gradient  w-full m-auto rounded-3xl lg:flex items-center relative lg:h-[400px] lg:p-6">
                     <div className=" flex flex-col items-center text-center lg:items-start px-4  lg:ml-6">
                         <h1 data-aos="fade-up"
@@ -48,7 +48,7 @@ export const Intro = () => {
                         <img className="w-[40%]  max-w-[100px] absolute  right-[240px] top-20 sm:max-w-[150px] lg:w-[190px] rounded-full sm:mx-5 mx-3  my-4" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/game5.svg?alt=media&token=10365504-e771-4b32-91ed-04f18add8e80" alt="" />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

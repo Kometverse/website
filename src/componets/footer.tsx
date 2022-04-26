@@ -4,9 +4,8 @@ export const Footer = () => {
     return (
         <>
             <>
-                <div className="w-full mt-5 py-5 flex items-center justify-around text-sm  lg:text-">
+                <div className=" m-auto mt-5 py-5 flex items-center justify-between w-[90%] text-sm  lg:text-">
                     <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e" className="lg:w-20 w-12 " alt="" />
-                    <p className="text-[12px]">Made with <i className="text-red-500">❤️</i> from india for global  </p>
                     <div className="flex items-center">
                         <a href="https://discord.gg/zSgSEGjh2n" target="_blank">
                             <img className="w-4 lg:w-7" src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/discord.svg?alt=media&token=45a1f48f-1c7d-410d-a114-b408182b98cc" alt="" />
@@ -20,6 +19,9 @@ export const Footer = () => {
                         </a>
 
                     </div>
+                </div>
+                <div>
+                    <p className=" text-center my-2  text-[12px]">Made with <i className="text-red-500">❤️</i> from india for global  </p>
                 </div>
                 <div className="text-center opacity-40 pb-8">
                     <p className="text-[13px]">&copy; 2022 KOMET | All rights reserved	</p>
