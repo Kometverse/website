@@ -5,12 +5,7 @@ interface Item {
     link: string;
 }
 
-interface Props {
-    open: boolean;
-    setOpen: Function;
-}
-
-export const Navbar = ({ open, setOpen }: Props) => {
+export const Navbar = () => {
     const hover_items = [
         {
             name: "Twitter",
@@ -54,10 +49,10 @@ export const Navbar = ({ open, setOpen }: Props) => {
                                 })}
                             </div>
                         </div>
-
                         <a href="#cta" className="" >
-                            <button className="hidden lg:block cta-button btn-2  cta px-8 py-2 rounded text-lg  relative"><span className="btn-span">Join waitlist</span></button>
+                            <button className="cta-button btn-2 cta px-6 py-2 rounded  relative"><span className="btn-span">Join waitlist</span></button>
                         </a>
+
                     </div>
                 </nav>
             </div>

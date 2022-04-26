@@ -16,7 +16,6 @@ export const CTA = () => {
     (async () => {
       const user: any = await useFirebase(value);
       if (onsubmit) {
-        // console.log(user)
         navigate(`/rank?email=${email}`);
       }
     })();

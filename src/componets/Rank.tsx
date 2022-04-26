@@ -4,7 +4,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { RWebShare } from "react-web-share";
-import Confetti from 'react-confetti'
+import Confetti from "react-confetti";
 import { useSearchParams } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { VscLinkExternal } from "react-icons/vsc";
@@ -19,8 +19,6 @@ interface Props {
   open: boolean;
   setOpen: Function;
 }
-
-
 
 const hover_items = [
   {
@@ -38,13 +36,12 @@ const hover_items = [
 ];
 
 export const Rank = () => {
-  const [open, setOpen] = useState(false)
-
+  const [open, setOpen] = useState(false);
 
   const height = window.innerHeight;
   const width = window.innerWidth;
   const [searchParams, setSearchParams] = useSearchParams();
-  const email = searchParams.get("email")
+  const email = searchParams.get("email");
 
   let navigate = useNavigate();
   const [rank, setRank] = useState(0);
@@ -54,37 +51,40 @@ export const Rank = () => {
   let myurl: any = null;
 
   useEffect(() => {
-    (
-      async () => {
-        // console.log(email)
-        const sortedArray: any = []
-        const sortedUser = collection(db, 'users');
-        const q = query(sortedUser, orderBy("points", "desc"), orderBy("created_at", "asc"));
+    (async () => {
+      // console.log(email)
+      const sortedArray: any = [];
+      const sortedUser = collection(db, "users");
+      const q = query(
+        sortedUser,
+        orderBy("points", "desc"),
+        orderBy("created_at", "asc")
+      );
 
-        const sortedUsers = (await getDocs(q)).docs;
-        sortedUsers.forEach((doc) => {
-          sortedArray.push({ ...doc.data(), id: doc.id })
-        })
-        // console.log(sortedArray)
-        const userQuery = query(sortedUser, where('email', '==', email));
-        newuser = (await getDocs(userQuery)).docs[0].data();
+      const sortedUsers = (await getDocs(q)).docs;
+      sortedUsers.forEach((doc) => {
+        sortedArray.push({ ...doc.data(), id: doc.id });
+      });
+      // console.log(sortedArray)
+      const userQuery = query(sortedUser, where("email", "==", email));
+      newuser = (await getDocs(userQuery)).docs[0].data();
 
-        myurl = `${window.location.protocol}//${window.location.host}/?refID=${newuser ? newuser.refID : ""}`;
-        setrefLink(myurl)
+      myurl = `${window.location.protocol}//${window.location.host}/?refID=${newuser ? newuser.refID : ""
+        }`;
+      setrefLink(myurl);
 
-        if (newuser) {
-          sortedArray.forEach((item: any) => {
-            if (newuser.refID === item.refID) {
-              // console.log("found it damn ")
-              setRank(sortedArray.indexOf(item) + 1500)
-            }
-          });
-        } else {
-          // console.log(" user not found ")
-        }
+      if (newuser) {
+        sortedArray.forEach((item: any) => {
+          if (newuser.refID === item.refID) {
+            // console.log("found it damn ")
+            setRank(sortedArray.indexOf(item) + 1500);
+          }
+        });
+      } else {
+        // console.log(" user not found ")
       }
-    )()
-  }, [email])
+    })();
+  }, [email]);
 
   return (
     <>
@@ -99,13 +99,14 @@ export const Rank = () => {
       <div className=" sticky top-0 z-40 bg-primary">
         <nav className="container m-auto flex justify-between items-center  p-4">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e"
+            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/komet.svg?alt=media&token=52edf4d2-e2a1-4205-87d4-5783f42e1196"
             className="w-20"
             alt=""
           />
           <div className="flex">
-
-            <a href="/" className="mx-4">home</a>
+            <a href="/" className="mx-4">
+              home
+            </a>
             <div className="group  relative px-4 flex flex-col justify-center">
               <div className="flex">
                 <p className="">Community</p>
@@ -124,17 +125,23 @@ export const Rank = () => {
                 })}
               </div>
             </div>
-
           </div>
         </nav>
       </div>
 
       <div className=" text-white overflow-hidden relative  flex justify-center  h-[80vh]  flex-col items-center">
-
-
-        <img src=" https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/ast.svg?alt=media&token=90091eca-e96f-432b-a32a-add5e6f542e3" className="w-44 h-44 lg:w-48" alt="" />
+        <img
+          src=" https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/ast.svg?alt=media&token=90091eca-e96f-432b-a32a-add5e6f542e3"
+          className="w-44 h-44 lg:w-48"
+          alt=""
+        />
         <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
-          That's Cool <img src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/future.svg?alt=media&token=e76969bc-bb28-4085-abad-6fa4eefc65b9" className=" mx-2 w-6" alt="" />
+          That's Cool{" "}
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/future.svg?alt=media&token=e76969bc-bb28-4085-abad-6fa4eefc65b9"
+            className=" mx-2 w-6"
+            alt=""
+          />
         </h2>
         <p className="rankjoin font-bold text-xl">
           Thanks for joining the waitlist!
@@ -149,22 +156,20 @@ export const Rank = () => {
         </p>
         <div className="flex justify-between  w-[90%] text-sm max-w-md ">
           <RWebShare
-            data={
-              {
-                title: myurl,
-                url: reflink,
-                text: myurl,
-              }
-            }
-
+            data={{
+              title: myurl,
+              url: reflink,
+              text: myurl,
+            }}
             onClick={() => setisCopied(true)}
           >
-            <button className="w-full intro-gradient rounded-lg p-2 text-xl  ">Invite Friends</button>
+            <button className="w-full intro-gradient rounded-lg p-2 text-xl  ">
+              Invite Friends
+            </button>
           </RWebShare>
         </div>
       </div>
       <Footer />
-
     </>
   );
 };
