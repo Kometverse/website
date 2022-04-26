@@ -18,7 +18,7 @@ export const TiltCards = () => {
                 data-aos-mirror="true"
                 data-aos-anchor-placement="top-center"
                 data-aos-once="false"
-                className="w-[30%] h-2 cta m-auto mt-10">
+                className="lg:w-[30%] w-[70%] h-2 cta m-auto mt-10">
 
               </div>
             </div>

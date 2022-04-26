@@ -49,7 +49,7 @@ export const Navbar = () => {
                                 })}
                             </div>
                         </div>
-                        <a href="#cta" className="" >
+                        <a href="#cta" className="hidden lg:block" >
                             <button className="cta-button btn-2 cta px-6 py-2 rounded  relative"><span className="btn-span">Join waitlist</span></button>
                         </a>
 
