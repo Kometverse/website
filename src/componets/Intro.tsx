@@ -12,7 +12,7 @@ export const Intro = () => {
         <>
 
             <div className="lg:h-[80vh] flex items-center bg-primary ">
-                <div data-aos="fade-up" className="intro-gradient  w-full m-auto rounded-3xl lg:flex items-center relative lg:h-[400px]">
+                <div data-aos="fade-up" className="intro-gradient  w-full m-auto rounded-3xl lg:flex items-center relative lg:h-[400px] lg:p-6">
                     <div className=" flex flex-col items-center text-center lg:items-start px-4  lg:ml-6">
                         <h1 data-aos="fade-up"
                             data-aos-offset="100"

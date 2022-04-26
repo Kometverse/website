@@ -73,7 +73,7 @@ html {
   backdrop-filter: blur(100px);
 }
 
-.card-border {
+/* .card-border {
   border-image-slice: 1;
   border-radius: 40px;
   border-image-source: linear-gradient(
@@ -82,7 +82,7 @@ html {
     rgba(255, 132, 243, 1),
     rgba(223, 6, 202, 0.47)
   );
-}
+} */
 
 .cta {
   background: linear-gradient(80deg, #290b68 0%, #8146ff 100%);
@@ -101,8 +101,10 @@ html {
   color: transparent;
 }
 .cta-btn {
-  background: linear-gradient(rgba(35, 10, 90, 1), rgba(35, 10, 90, 0.8));
+  position: relative;
+  outline: none;
 }
+
 input:focus {
   outline: none;
 }
@@ -133,4 +135,84 @@ button:focus {
   );
   background-clip: text;
   color: transparent;
+}
+
+button {
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: none;
+}
+button:hover {
+  transform: all;
+  transition-delay: 0.3s;
+  transition-timing-function: ease-in-out;
+  box-shadow: 0px 2px 8px white, 0px -2px 8px white;
+}
+.btn-span {
+  display: block;
+}
+button::before,
+button::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #8146ff;
+}
+
+.btn-span::before,
+.btn-span::after {
+  content: "";
+  width: 1px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #8146ff;
+  box-shadow: 0px 0px 4px white;
+  /* box-shadow: 0px 10px 25px #888, 0px -10px 25px #888; */
+}
+button:hover::before,
+button:hover::after {
+  width: 100%;
+}
+button:hover span::before,
+button:hover span::after {
+  height: 100%;
+}
+
+.btn-2::before,
+.btn-2::after {
+  transition-delay: 0s;
+}
+.btn-2 span::before,
+.btn-2 span::after {
+  transition-delay: 0.2s;
+}
+.btn-2::before {
+  right: 0;
+  top: 0;
+}
+.btn-2::after {
+  left: 0;
+  bottom: 0;
+}
+.btn-2 span::before {
+  left: 0;
+  top: 0;
+}
+.btn-2 span::after {
+  right: 0;
+  bottom: 0;
+}
+.btn-2:hover::before,
+.btn-2:hover::after {
+  transition-delay: 0.2s;
+}
+.btn-2:hover span::before,
+.btn-2:hover span::after {
+  transition-delay: 0s;
 }
