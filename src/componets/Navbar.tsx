@@ -24,7 +24,7 @@ export const Navbar = () => {
     return (
         <>
             <div className=" sticky top-0 z-40 bg-primary">
-                <nav className="container m-auto flex justify-between items-center  px-2 py-6 ">
+                <nav className="container m-auto flex justify-between items-center  px-4 py-6 ">
                     <img
                         src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e"
                         className="w-20"
