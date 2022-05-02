@@ -3,7 +3,7 @@ import { CTA } from "./componets/bottomCta";
 import { Footer } from "./componets/footer";
 import { Hero } from "./componets/Hero";
 import { Navbar } from "./componets/Navbar";
-import { TiltCards } from "./componets/titlcard";
+import { TiltCards } from "./componets/mainsection";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

@@ -23,18 +23,17 @@ export const Navbar = () => {
 
     return (
         <>
-            <div className=" sticky top-0 z-40 bg-primary">
-                <nav className="container m-auto flex justify-between items-center  p-4">
+            <div className=" sticky top-0 z-40 bg-primary shadow-sm shadow-[#8146ff]">
+                <nav className="container m-auto flex justify-between items-center  px-2 py-6 ">
                     <img
-                        src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/komet.svg?alt=media&token=52edf4d2-e2a1-4205-87d4-5783f42e1196"
+                        src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e"
                         className="w-20"
-                        alt=""
+                        alt="Komet logo"
                     />
                     <div className="flex">
                         <div className="group  relative px-4 flex flex-col justify-center">
-                            <div className="flex">
-                                <p className="">Community</p>
-                                <IoIosArrowDropdown className="mx-2" />
+                            <div className="cursor-pointer">
+                                <p className="cursor-pointer ">join our Community</p>
                             </div>
                             <div className="hidden group-hover:flex absolute  top-4  items-center py-4  flex-col ">
                                 {hover_items.map((item: Item) => {

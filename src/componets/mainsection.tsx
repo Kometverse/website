@@ -2,13 +2,13 @@
 export const TiltCards = () => {
   return (
     <>
-      <div className="bg-primary">
+      <main className="bg-primary">
         <div className="overflow-hidden lg:min-h-screen  flex items-center justify-center py-12  relative z-20  ">
           <div className="w-full lg:w-[90%] m-auto ">
             <div className="">
-              <p className=" px-5  text-center max-w-[35ch] text-4xl bold  sm:text-7xl font-bold m-auto  ">
+              <h2 className=" px-5  text-center max-w-[35ch] text-4xl bold  sm:text-7xl font-bold m-auto  ">
                 Why  <span className="web3-text">Komet</span> ?
-              </p>
+              </h2>
               <div
                 data-aos="fade-right"
                 data-aos-offset="100"
@@ -19,7 +19,6 @@ export const TiltCards = () => {
                 data-aos-anchor-placement="top-center"
                 data-aos-once="false"
                 className="lg:w-[30%] w-[70%] h-2 cta m-auto mt-10">
-
               </div>
             </div>
             <div className="w-[90%] lg:w-full my-24 m-auto  lg:flex justify-between items-center  relative">
@@ -37,7 +36,7 @@ export const TiltCards = () => {
                   <img
                     src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/secure%20(1).svg?alt=media&token=04baf336-5177-476e-88f5-f9a92cc94a2f"
                     className="object-cover "
-                    alt=""
+                    alt=" Komet Secure Transection"
                   />
                 </div>
                 <div>
@@ -56,13 +55,12 @@ export const TiltCards = () => {
                 data-aos-mirror="true"
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
-
                 className="lg:w-[32%] background rounded-lg  card-border flex flex-col items-center justify-center p-6 text-center my-8 lg:my-0   lg:h-[550px] " >
                 <div className=" h-[40%] w-[50%] items-center flex justify-center">
                   <img
                     src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/creadble%20(1).svg?alt=media&token=836e6102-a683-44a1-80d3-76f93bd6a4e2"
                     className="object-cover"
-                    alt=""
+                    alt="Komet credable NFTs"
                   />
                 </div>
                 <div>
@@ -86,7 +84,7 @@ export const TiltCards = () => {
                   <img
                     src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/future%20(1).svg?alt=media&token=4903e277-8d09-48a0-b0ac-2f7352420e7a"
                     className="object-cover"
-                    alt=""
+                    alt="Komet Easy Access to the future "
                   />
                 </div>
                 <div>
@@ -99,7 +97,7 @@ export const TiltCards = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
     </>
   );

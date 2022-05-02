@@ -2,7 +2,7 @@
 export const Hero = () => {
     return (
         <>
-            <div className="w-full lg:w-[90%] m-auto h-screen  justify-center flex flex-col  lg:h-screen bg-primary">
+            <header className="w-full lg:w-[90%] m-auto h-screen  justify-center flex flex-col  lg:h-screen bg-primary">
                 <div className="fadePopInAndStay w-full  flex flex-col items-center  lg:items-start p-4  ">
                     <h1 className="font-bold flex flex-col text-4xl lg:text-8xl ">
                         <span className="web3-text ">The <span className="text-white">easiest</span>  way</span>
@@ -20,7 +20,7 @@ export const Hero = () => {
                     </div>
                 </div>
 
-            </div>
+            </header>
         </>
     )
 }   
