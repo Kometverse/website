@@ -7,16 +7,21 @@ export const CTA = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [value, setValue] = useState("");
-  const [n, setn] = useState();
   const [onsubmit, setsubmit] = useState(false);
+  const [isvalid, setISValid] = useState<boolean>()
+  const emailRegex = /\S+@\S+\.\S+/;
 
-  const [data, setdata] = useState();
 
   useEffect(() => {
     (async () => {
-      const user: any = await useFirebase(value);
-      if (onsubmit) {
-        navigate(`/rank?email=${email}`);
+      if (value.length) {
+        if (emailRegex.test(value)) {
+          const user: any = await useFirebase(value);
+          if (onsubmit) {
+            navigate(`/rank?email=${email}`);
+          }
+        }
+
       }
     })();
   }, [value]);

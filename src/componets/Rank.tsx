@@ -99,9 +99,9 @@ export const Rank = () => {
       <div className=" sticky top-0 z-40 bg-primary">
         <nav className="container m-auto flex justify-between items-center  p-4">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/komet.svg?alt=media&token=52edf4d2-e2a1-4205-87d4-5783f42e1196"
+            src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/log.svg?alt=media&token=fb81cef9-bac7-42f1-b638-432a5824450e"
             className="w-20"
-            alt=""
+            alt="Komet logo"
           />
           <div className="flex">
             <a href="/" className="mx-4">
@@ -110,7 +110,6 @@ export const Rank = () => {
             <div className="group  relative px-4 flex flex-col justify-center">
               <div className="flex">
                 <p className="">Community</p>
-                <IoIosArrowDropdown className="mx-2" />
               </div>
               <div className="hidden group-hover:flex absolute  top-4  items-center py-4  flex-col ">
                 {hover_items.map((item: Item) => {
@@ -133,14 +132,14 @@ export const Rank = () => {
         <img
           src=" https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/ast.svg?alt=media&token=90091eca-e96f-432b-a32a-add5e6f542e3"
           className="w-44 h-44 lg:w-48"
-          alt=""
+          alt="Komet join thanks"
         />
         <h2 className="flex text-lg leading-6 py-4 lg:text-2xl">
           That's Cool{" "}
           <img
             src="https://firebasestorage.googleapis.com/v0/b/kometrefral.appspot.com/o/future.svg?alt=media&token=e76969bc-bb28-4085-abad-6fa4eefc65b9"
             className=" mx-2 w-6"
-            alt=""
+            alt="Komet Rocket"
           />
         </h2>
         <p className="rankjoin font-bold text-xl">
