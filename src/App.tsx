@@ -12,7 +12,7 @@ function App() {
     Aos.init();
     Aos.refresh();
   }, []);
-
+  // commet for new website  
   return (
     <div>
       <Navbar />
