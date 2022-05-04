@@ -66,7 +66,7 @@ export const TiltCards = () => {
                 <div>
                   <p className="text-2xl  font-bold my-2 ">Access credible assets with Komet</p>
                   <p className="lg:text-lg text-sm my-4 ">
-                    Convert in-game assets to NFTs and vice versa. Trade only credible assets with Komet safety score.
+                    Interact with the credible assets and trade them across games and protocols. Simplified access with a single click.
                   </p>
                 </div>
               </div>
@@ -88,9 +88,9 @@ export const TiltCards = () => {
                   />
                 </div>
                 <div>
-                  <p className="text-2xl font-bold my-2">Instant access to future </p>
+                  <p className="text-2xl font-bold my-2">Passport to the future  </p>
                   <p className="lg:text-lg text-sm my-4 ">
-                    Be the first one to access simplified multi-chain experience from the interoperable gaming universe . Earn, invest and save with your friends
+                    Be the first one to access truly multi-chain experience from the interoperable universe . Earn, invest and build identity with your friends.
                   </p>
                 </div>
               </div>
