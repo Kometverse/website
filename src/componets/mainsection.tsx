@@ -42,7 +42,7 @@ export const TiltCards = () => {
                 <div>
                   <p className="text-2xl  font-bold my-2 ">Secure Transactions</p>
                   <p className="lg:text-lg text-sm my-4 ">
-                    Take control of your assets by setting up a security layer over each protocol you interact with. Easily recover your wallet
+                    Take control of your assets by setting up a security layer for each protocol you interact with. Fall in love with your NFTs in a secured environment.
                   </p>
                 </div>
               </div>
