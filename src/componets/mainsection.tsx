@@ -64,7 +64,7 @@ export const TiltCards = () => {
                   />
                 </div>
                 <div>
-                  <p className="text-2xl  font-bold my-2 ">Credible NFTs</p>
+                  <p className="text-2xl  font-bold my-2 ">Access credible assets with Komet</p>
                   <p className="lg:text-lg text-sm my-4 ">
                     Convert in-game assets to NFTs and vice versa. Trade only credible assets with Komet safety score.
                   </p>
